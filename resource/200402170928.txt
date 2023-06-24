@@ -1,0 +1,153 @@
+﻿标题: Windows Rootkit相关链接
+
+维护: scz <cloudsky@gmail.com>
+链接: https://scz.617.cn/resource/200402170928.txt
+创建: 2004-02-17 09:28
+更新: 2006-03-22 16:24
+
+--
+    如有推荐，请发信至<scz@nsfocus.com>多多指教，谢谢。
+--
+
+[ 1] Avoiding Windows Rootkit Detection/Bypassing PatchFinder 2 - Edgar Barbosa [2004-02-17]
+     http://www.geocities.com/embarbosa/bypass/bypassEPA.pdf
+
+[ 2] TOCTOU with NT System Service Hooking
+     http://www.securityfocus.com/archive/1/348570
+
+     TOCTOU with NT System Service Hooking Bug Demo
+     http://www.securesize.com/Resources/hookdemo.shtml
+
+[ 3] Hooking Windows NT System Services
+     http://www.windowsitlibrary.com/content/356/06/1.html
+     http://www.windowsitlibrary.com/content/356/06/2.html
+
+[ 4] NTIllusion: A portable Win32 userland rootkit - Kdm <Kodmaker@syshell.org>
+     http://www.phrack.org/phrack/62/p62-0x0c_Win32_Portable_Userland_Rootkit.txt
+
+[ 5] Kernel-mode backdoors for Windows NT - firew0rker <firew0rker@nteam.ru>
+     http://www.phrack.org/phrack/62/p62-0x06_Kernel_Mode_Backdoors_for_Windows_NT.txt
+
+[ 6] Win2K Kernel Hidden Process/Module Checker 0.1 (Proof-Of-Concept) - Tan Chew Keong [2004-05-23]
+     http://www.security.org.sg/code/kproccheck.html
+     http://www.security.org.sg/code/KProcCheck-0.1.zip
+     http://www.security.org.sg/code/KProcCheck-0.2beta1.zip
+
+[ 7] port/connection hiding - akcom[2004-06-18]
+     http://www.rootkit.com/newsread_print.php?newsid=143
+
+[ 8] Process Invincibility - metro_mystery[2004-06-13]
+     http://www.rootkit.com/newsread_print.php?newsid=139
+
+[ 9] KCode Patching - hoglund[2004-06-06]
+     http://www.rootkit.com/newsread_print.php?newsid=152
+     http://www.rootkit.com/vault/hoglund/migbot.zip
+
+[10] Hiding Window Handles through Shadow Table Hooking on Windows XP - metro_mystery [2004-06-12]
+     http://www.rootkit.com/newsread_print.php?newsid=137
+
+[11] hooking functions not exported by ntoskrnl - akcom[2004-07-02]
+     http://www.rootkit.com/newsread_print.php?newsid=151
+
+[12] A method of get the Address of PsLoadedModuleList - stoneclever [2004-06-10]
+     http://www.rootkit.com/newsread_print.php?newsid=135
+
+[13] Fun with Kernel Structures (Plus FU all over again) - fuzen_op [2004-06-08]
+     http://www.rootkit.com/newsread_print.php?newsid=134
+     http://www.rootkit.com/vault/fuzen_op/FU_Rootkit.zip
+
+[14] Getting Kernel Variables from KdVersionBlock, Part 2 - ionescu007 [2004-07-11]
+     http://www.rootkit.com/newsread_print.php?newsid=153
+
+[15] Byepass Scheduler List Process Detection - SoBeIt <kinvis@hotmail.com> [2004-04-25]
+     http://www.rootkit.com/newsread_print.php?newsid=117
+
+[16] Detecting Hidden Processes by Hooking the SwapContext Function - kkasslin [2004-08-03]
+     http://www.rootkit.com/newsread_print.php?newsid=170
+
+[17] Loading Rootkit using SystemLoadAndCallImage - Greg Hoglund <hoglund@ieway.com> [2000-08-29]
+     http://archives.neohapsis.com/archives/ntbugtraq/2000-q3/0114.html
+     http://seclists.org/lists/bugtraq/2000/Aug/0408.html
+     http://marc.theaimsgroup.com/?l=ntbugtraq&m=96766147118874&w=2
+     http://www.securityfocus.com/archive/1/79379/2002-11-30/2002-12-06/0
+
+[18] A *REAL* NT Rootkit, patching the NT Kernel - Greg Hoglund <hoglund@ieway.com> [1999-09-09]
+     http://www.phrack.org/phrack/55/P55-05
+
+[19] Win2K/XP SDT Restore 0.2 (Proof-Of-Concept) - Tan Chew Keong [2004-10-01]
+     http://www.security.org.sg/code/sdtrestore.html
+     http://www.security.org.sg/code/SDTrestore-0.1.zip
+     http://www.security.org.sg/code/SDTrestore-0.2.zip
+
+     Disabling Sebek Win32 Client by Direct Service Table Restoration - Tan Chew Keong [2004-07-17]
+     http://www.security.org.sg/vuln/sebek215-2.html
+
+[20] Sebek is a tool to capture the attacker's activities on a honeypot
+     http://www.honeynet.org/tools/sebek/
+
+     Sebek client for Win2000 and WinXP
+     http://www.honeynet.org/tools/sebek/sebek-win32-2.1.5-src.zip
+
+[21] Advanced Windows 2000 Rootkits Detection - Jan K. Rutkowski <jkrutkowski@elka.pw.edu.pl>
+     http://www.blackhat.com/presentations/bh-usa-03/bh-us-03-rutkowski/bh-us-03-rutkowski-r2.pdf
+     http://www.blackhat.com/presentations/bh-usa-03/bh-us-03-rutkowski/rutkowski-antirootkit.zip
+
+[22] Windows Key Logging and Counter-Measures - Chew Keong TAN <chewkeong@hotmail.com>
+     http://pachome2.pacific.net.sg/~chewkeong/keylogr.pdf
+
+[23] Windows NT System-Call Hooking/Dr. Dobb's Journal January 1997 - Mark Russinovich <mark@osr.com> and Bryce Cogswell <cogswell@cs.uoregon.edu>
+     http://www.exetools.com/forum/showthread.php?p=23296
+     http://www.exetools.com/forum/attachment.php?attachmentid=1751(9701.rar 253.6KB)
+     (three post minimum required)
+
+[24] Kernel Filter Driver Example & Article(非常不错)
+     Designing A Kernel Key Logger/A Filter Driver Tutorial - Clandestiny <clandestiny@despammed.com> [2004-09-01]
+     http://www.woodmann.net/forum/showthread.php?t=6312
+     http://www.woodmann.net/forum/attachment.php?attachmentid=1084(Klog 1.0.zip 139.8KB)
+
+[25] Hide'n'Seek? Anatomy of Stealth Malware
+     http://www.blackhat.com/presentations/bh-europe-04/bh-eu-04-erdelyi/bh-eu-04-erdelyi-paper.pdf
+     (对rootkit隐藏手段进行概述性介绍，没有太多意义)
+
+[26] A more stable way to locate real KiServiceTable - 90210 [2004-08-12]
+     http://www.rootkit.com/newsread_print.php?newsid=176
+
+[27] Bypassing SDT Restore tool - Opc0de[2004-10-11]
+     http://www.rootkit.com/newsread_print.php?newsid=200
+     http://www.rootkit.com/vault/Opc0de/Bypassing_SDT_Restore.zip
+
+[28] Writing Trojans that bypass Windows XP Service Pack 2 Firewall - <americanidiot@hushmail.com> [2004-10-12]
+     http://marc.theaimsgroup.com/?l=full-disclosure&m=109759186016337&w=2
+
+[29] Concepts for the Stealth Windows Rootkit - Joanna Rutkowska <joanna@mailsnare.net> [2003-09]
+     http://invisiblethings.org/papers/chameleon_concepts.pdf
+
+[30] Rootkits Detection on Windows Systems - Joanna Rutkowska <joanna@invisiblethings.org> [2004-10]
+     http://invisiblethings.org/papers/ITUnderground2004_Win_rtks_detection.ppt
+
+[31] OMCD - Open Methodology for Compromise Detection by Joanna Rutkowska <omcd@isecom.org>
+     http://www.isecom.org/projects/omcd.shtml
+     http://isecom.securenetltd.com/omcs.outline.v.0.1.pdf
+
+[32] Windows rootkits of 2005 - James Butler <james.butler@hbgary.com>, Sherri Sparks <ssparks@longwood.cs.ucf.edu> [2005-11-04]
+     http://www.securityfocus.com/infocus/1850
+     http://www.securityfocus.com/infocus/1851
+     http://www.securityfocus.com/infocus/1854
+
+     http://www.securityfocus.com/print/infocus/1850
+     http://www.securityfocus.com/print/infocus/1851
+     http://www.securityfocus.com/print/infocus/1854
+     (xuna推荐)
+
+[33] Implementing malware with virtual machines - Samuel T. King, Peter M. Chen
+     http://www.eecs.umich.edu/Rio/papers/king06.pdf
+
+     how to detect VMM using (almost) one CPU instruction - Joanna Rutkowska <joanna@invisiblethings.org>
+     http://invisiblethings.org/tools/redpill.c
+     http://invisiblethings.org/tools/redpill.exe
+
+     Generically Determining the Prescence of Virtual Machines - valsmith [2006-03-17]
+     http://www.offensivecomputing.net/?q=node/172
+     http://www.offensivecomputing.net/./files/active/0/vm.pdf
+     http://www.offensivecomputing.net/./files/active/0/nopill.cpp
+     http://www.offensivecomputing.net/./files/active/0/nopill.exe

@@ -1,0 +1,23 @@
+﻿标题: Windows设备驱动程序编程相关链接
+
+维护: scz <cloudsky@gmail.com>
+链接: https://scz.617.cn/resource/200603161005.txt
+创建: 2006-03-16 10:05
+更新: 2006-05-08 10:51
+
+--
+    如有推荐，请发信至<scz@nsfocus.com>多多指教，谢谢。
+--
+
+[ 1] Getting DbgPrint Output To Appear In Longhorn
+     http://www.osronline.com/article.cfm?id=295
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=295
+
+[ 2] Scheduling, Thread Context, and IRQL - [2006-04-28]
+     http://www.microsoft.com/taiwan/whdc/driver/kernel/IRQL.mspx
+     http://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/IRQL_thread.doc
+
+[ 3] Handling IRPs: What Every Driver Writer Needs to Know - [2003-07-15]
+     http://msdn.microsoft.com/library/en-us/dndevice/html/IRP_Handle.asp?frame=true
+     http://www.microsoft.com/whdc/driver/kernel/IRPs.mspx
+     http://download.microsoft.com/download/5/7/7/577a5684-8a83-43ae-9272-ff260a9c20e2/IRPs.doc

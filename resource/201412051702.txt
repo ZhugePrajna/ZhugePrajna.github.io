@@ -1,0 +1,103 @@
+﻿标题: Windows USB Sniffer相关资料
+
+维护: scz <cloudsky@gmail.com>
+链接: https://scz.617.cn/resource/201412051702.txt
+创建: 2014-12-05 17:02
+更新:
+
+Usb Sniffer for Windows
+http://sourceforge.net/projects/usbsnoop/
+
+USBlyzer, USB Protocol Analyzer and USB Traffic Sniffer - [2014-03-16]
+http://www.usblyzer.com/
+http://www.usblyzer.com/download.htm
+http://www.usblyzer.com/files/USBlyzer.zip (Fully functional 33-day trial)
+
+USBPcap, USB Packet capture for Windows - <desowin@gmail.com>
+http://desowin.org/usbpcap/
+http://dl.bintray.com/desowin/USBPcap/USBPcapSetup-1.0.0.7.exe
+https://groups.google.com/forum/#!forum/usbpcap
+
+USB Packet capture for Windows Tour
+http://desowin.org/usbpcap/tour.html
+https://usbpcap.googlecode.com/files/usbpcap_sample_v2.pcap
+
+USBPcap Capture limitations
+http://desowin.org/usbpcap/capture_limitations.html
+
+USBPcapDriver block diagram
+http://desowin.org/usbpcap/block_diagram.html
+
+USBPcap capture buffer
+http://desowin.org/usbpcap/capture_buffer.html
+
+Wireshark dissectors overview
+http://desowin.org/usbpcap/dissectors.html
+
+USBPcap TODO
+http://desowin.org/usbpcap/todo.html
+
+USB capture setup
+http://wiki.wireshark.org/CaptureSetup/USB
+
+Get USBPcap source code
+http://desowin.org/usbpcap/develop.html
+https://github.com/desowin/usbpcap
+(git clone https://github.com/desowin/usbpcap.git)
+
+Windows Driver Kit Version 7.1.0
+http://www.microsoft.com/en-us/download/details.aspx?id=11800
+http://download.microsoft.com/download/4/A/2/4A25C7D5-EFBE-4182-B6A9-AE6850409A78/GRMWDK_EN_7600_1.ISO
+
+Windows 8.1: Download kits and tools
+http://msdn.microsoft.com/en-US/windows/hardware/gg454513
+
+"SniffUsb 2.0" USB Sniffer for Windows XP - Thomas F. Divine <tdivine@pcausa.com> [2007-02-23]
+http://www.pcausa.com/Utilities/UsbSnoop/
+http://www.pcausa.com/Utilities/UsbSnoop/SniffUSB-x86-2.0.0006.zip
+http://www.pcausa.com/Utilities/UsbSnoop/SniffUSB-x64-2.0.0006.zip
+http://www.pcausa.com/Utilities/UsbSnoop/SniffUSB-src-2.0.0006.zip
+http://www.pcausa.com/Utilities/UsbSnoop/RELEASE.TXT
+
+usbmon on Linux
+
+USBTrace: USB Protocol Analyzer Software for Windows
+http://www.sysnucleus.com/
+http://www.sysnucleus.com/usbtrace_download.html
+http://www.sysnucleus.com/usbtrace-x86.zip
+http://www.sysnucleus.com/usbtrace-x64.zip
+(15 Days Evaluation Version, is limited to capture only up to 256KB of data during a single capture session)
+
+busdog is a filter driver for MS Windows (XP and above) to sniff USB traffic - [2010-07]
+https://code.google.com/p/busdog/
+https://code.google.com/p/busdog/downloads/list
+https://busdog.googlecode.com/files/busdog32_v0.2.1.exe
+https://busdog.googlecode.com/files/busdog64_v0.2.1.exe
+(驱动未经有效签名，在64-bits系统上有麻烦，不推荐，是Google暑期活动的产物)
+
+OpenVizsla is a Open Hardware FPGA-based USB analyzer
+http://openvizsla.org/
+https://github.com/openvizsla/ov_ftdi/tarball/master
+https://github.com/openvizsla/ov_ftdi/zipball/master
+https://github.com/openvizsla/ov_ftdi/tree/master/hardware
+https://github.com/openvizsla/ov_ftdi/tree/master/software/host
+https://github.com/openvizsla/ov_ftdi/wiki
+https://github.com/openvizsla/ov_ftdi/wiki/building
+https://github.com/openvizsla/ov_ftdi/wiki/ovctl
+http://openvizsla.org/images/ov_3.2_design.pdf
+http://openvizsla.org/images/ov_3.2_schematics_BOM.pdf
+http://openvizsla.org/images/openvizsla_assembly_notes.pdf
+https://groups.google.com/forum/#!forum/ov-talk
+
+USB Monitor Pro
+http://www.fabulatech.com/usb-monitor-pro.html
+http://www.fabulatech.com/usb-monitor-pro-download.html
+http://www.fabulatech.com/usb-monitor-pro.msi
+(Trial version limitations: 15-days trial, 10 minutes limitation of a monitoring session)
+
+Free USB Analyzer
+http://freeusbanalyzer.com/
+http://freeusbanalyzer.com/file/default (free-usb-analyzer.exe)
+http://freeusbanalyzer.com/file/alternate (free-usb-analyzer.exe)
+http://freeusbanalyzer.com/file/zip (free-usb-analyzer.zip)
+(有点可疑，但VT说它没事，还有有效签名)

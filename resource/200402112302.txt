@@ -1,0 +1,84 @@
+﻿标题: Windows文件系统驱动程序编程相关链接
+
+维护: scz <cloudsky@gmail.com>
+链接: https://scz.617.cn/resource/200402112302.txt
+创建: 2004-02-11 23:02
+更新: 2005-11-29 11:22
+
+--
+    如有推荐，请发信至<scz@nsfocus.com>多多指教，谢谢。
+--
+
+[ 1] What's in a Name? - Cracking Rename Operations
+     http://www.osronline.com/article.cfm?id=85
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=85
+
+[ 2] Filtering the Riff-Raff - Observations on File System Filter Drivers
+     http://www.osronline.com/article.cfm?id=34
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=34
+
+[ 3] Tracking State and Context - Reference Counting for File System Filter Drivers
+     http://www.osronline.com/article.cfm?id=102
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=102
+
+[ 4] Redirecting Create Requests - [2005-04-20]
+     http://www.osronline.com/article.cfm?article=397
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=397
+     http://www.osronline.com/OsrDown.cfm/redirect.zip?name=redirect.zip&id=87
+
+[ 5] Meandering Through the Object Manager/How to Get From Create to a Target Device Object - [2005-03-16]
+     http://www.osronline.com/article.cfm?article=381
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=381
+
+[ 6] The Transactional File System (TxFS) in Windows - [2005-04-20]
+     http://www.osronline.com/article.cfm?article=398
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=398
+
+[ 7] Writing a File System Minifilter(Pitfalls, Hints and Tips) - Rod Widdowson [2005-11-16]
+     http://www.osronline.com/article.cfm?id=424
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=424
+
+[ 8] File Systems & XP/New File Systems Material in Windows XP - [2001-08-15]
+     http://www.osronline.com/article.cfm?id=33
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=33
+
+[ 9] Tunneling/Name Tunneling in Windows 2000 File Systems - [2001-06-15]
+     http://www.osronline.com/article.cfm?article=22
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=22
+
+[10] What's in a Name?/Cracking Rename Operations - [1997-04-15]
+     http://www.osronline.com/article.cfm?article=85
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=85
+
+[11] File System Filter Context/Observations and Comments - [2004-12-09]
+     http://www.osronline.com/article.cfm?article=356
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=356
+
+[12] Caching in Network File Systems - [2003-05-09]
+     http://www.osronline.com/article.cfm?article=226
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=226
+
+[13] One Special Case/Testing File Systems - [2004-08-18]
+     http://www.osronline.com/article.cfm?article=320
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=320
+
+[14] Finding File Contents in Memory - [2004-03-12]
+     http://www.osronline.com/article.cfm?article=280
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=280
+
+[15] Are You Being SRVed?/The Lan Manager File Server on NT - [1996-08-15]
+     http://www.osronline.com/article.cfm?article=89
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=89
+
+[16] Going Native/Using the NT API for File I/O - [1996-06-15]
+     http://www.osronline.com/article.cfm?id=91
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=91
+     http://www.osronline.com/OsrDown.cfm/native.zip?name=native.zip&id=91
+
+[17] Cache Me if You Can/Using the NT Cache Manager - [1996-04-15]
+     http://www.osronline.com/article.cfm?id=167
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=167
+
+[18] Emerging Issues in IoCancelFileOpen - [2003-03-06]
+     http://www.osronline.com/article.cfm?article=219
+     http://www.osronline.com/custom.cfm?name=articlePrint.cfm&id=219
