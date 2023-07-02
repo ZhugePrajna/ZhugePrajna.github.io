@@ -23,4 +23,6 @@
 
 关于捐赠项目：本站暂未开通捐赠
 
-关于网站资源：www.blackorblank.org/wp-content/uploads（原址链接，现已更改至zhugeprajna.github.io）
+关于网站资源：www.blackorblank.org/wp-content/uploads
+
+（原址链接，现已更改至zhugeprajna.github.io）
