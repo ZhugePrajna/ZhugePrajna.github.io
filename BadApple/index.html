@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Bad Apple!!</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div id="loading">
+			<img src="gif/snow.gif" alt="" />
+		</div>
+		<div class="layout">
+			<button class="btn btn-primary" id="play">Play</button>
+			<button class="btn btn-danger" id="pause" disabled>Pause</button>
+		</div>
+		
+		<div id="ani" class="layout"></div>
+		
+	</body>
+	<script src="./js/data.js"></script>
+	<script>
+		var music=new Audio('audios/BadApple.wav');
+		var loading=document.getElementById('loading');
+		var timer=null;
+		var i=0;
+		var play=document.getElementById('play');
+		var pause=document.getElementById('pause');
+		document.onreadystatechange=function(){
+			if(document.readyState=='complete'){
+				loading.className='fadeout';
+				setTimeout(function(){
+				  document.body.removeChild(loading);
+				},300)
+				
+			}
+		}
+		play.onclick=function(){
+			clearInterval(timer);
+			pause.removeAttribute('disabled');
+			music.play();
+			timer=setInterval(function(){
+				document.getElementById('ani').innerHTML=data[i];
+				i++;
+			},33)
+		};
+		pause.onclick=function(){
+			music.pause();
+			pause.setAttribute('disabled','disabled')
+			clearInterval(timer);
+		}
+		
+		
+	</script>
+</html>
