@@ -1,7 +1,7 @@
 # 关于Myself
 一个奇葩的学者，仅此而已
 
-喜欢的游戏：国际象棋、日麻、Mindustry、Arcaea…
+喜欢的游戏：Chess、Arcaea
 
 最爱的话语：In my country，I can do anything. If I want，I can grow apples.
 
