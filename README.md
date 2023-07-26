@@ -21,6 +21,7 @@
 
 关于Zhou EnLai页面：不必多说 是为了纪念这位先生的（暂未构建）
 
+#有些事想写下来，但各位也明白，寻衅滋事是个袋子，什么都可以装。
 关于捐赠项目：本站暂未开通捐赠
 
 关于网站资源：www.blackorblank.org/wp-content/uploads
