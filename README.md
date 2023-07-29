@@ -28,7 +28,7 @@
 
 （原址链接，现已更改至zhugeprajna.github.io）
 
-#Other
+# 经典国外小说梗概节选
 
 I don't want to say anything more, because if I talk too much about some things, it will inevitably get angry. 
 
