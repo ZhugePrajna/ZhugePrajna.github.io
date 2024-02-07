@@ -1,0 +1,10 @@
+#Tools Library
+
+Notepad3: https://github.com/rizonesoft/Notepad3
+Inkscape: https://inkscape.org/
+Kdenlive: https://kdenlive.org/
+Shotcut: https://www.shotcut.org/
+MPV: https://mpv.io/
+Geany: https://www.geany.org/
+Free Download Manager: https://www.freedownloadmanager.org/
+
