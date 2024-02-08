@@ -1,10 +1,26 @@
-#Tools Library
+#Tools Library#
+#We need a more creative open source era#
 
+[Browser plugins and portable tools]
+uBlock Origin: https://ublockorigin.com/
+Free Download Manager: https://www.freedownloadmanager.org/
+7-zip: https://7-zip.org/
+
+[Text editing tools]
 Notepad3: https://github.com/rizonesoft/Notepad3
+Geany: https://www.geany.org/
+
+[Video editing, image editing, recording and other media tools]
 Inkscape: https://inkscape.org/
+OBS Studio: https://obsproject.com/
+Audacity: https://www.audacityteam.org/
 Kdenlive: https://kdenlive.org/
 Shotcut: https://www.shotcut.org/
-MPV: https://mpv.io/
-Geany: https://www.geany.org/
-Free Download Manager: https://www.freedownloadmanager.org/
+Blender: https://www.blender.org/
+More Free Tools Website: https://tjfree.com/
 
+[Video and image viewing tools]
+MPV: https://mpv.io/
+ImageGlass: https://imageglass.org/
+
+ETC...
