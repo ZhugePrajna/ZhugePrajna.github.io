@@ -23,4 +23,7 @@ More Free Tools Website: https://tjfree.com/
 MPV: https://mpv.io/
 ImageGlass: https://imageglass.org/
 
+[Other]
+Microsoft Visual C++ Redistributable: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
+
 ETC...
