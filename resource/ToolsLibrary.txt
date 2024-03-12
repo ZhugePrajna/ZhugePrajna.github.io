@@ -7,6 +7,7 @@ Free Download Manager: https://www.freedownloadmanager.org/
 7-zip: https://7-zip.org/
 
 [Text editing tools]
+Visual Studio Code: https://code.visualstudio.com/
 Notepad3: https://github.com/rizonesoft/Notepad3
 Geany: https://www.geany.org/
 
@@ -24,6 +25,17 @@ MPV: https://mpv.io/
 ImageGlass: https://imageglass.org/
 
 [Other]
+VirtualBox: https://www.virtualbox.org/
+QEMU: https://www.qemu.org/
+Discord: https://discord.com/
+Steam: https://store.steampowered.com/
+Kali Linux: https://www.kali.org/
+OpenBSD: https://www.openbsd.org/
 Microsoft Visual C++ Redistributable: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
+Rust Programming Language: https://www.rust-lang.org/
+Python: https://www.python.org/
+Go: https://go.dev/
+
+
 
 ETC...
