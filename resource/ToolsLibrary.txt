@@ -25,11 +25,15 @@ MPV: https://mpv.io/
 ImageGlass: https://imageglass.org/
 
 [Other]
+Nvidia: https://www.nvidia.com/download/index.aspx
+
+VMware Workstation Pro: https://www.vmware.com/products/workstation-pro.html.html
 VirtualBox: https://www.virtualbox.org/
 QEMU: https://www.qemu.org/
 
 Discord: https://discord.com/
 Steam: https://store.steampowered.com/
+Epic: https://store.epicgames.com/en-US/
 
 Ubuntu: https://ubuntu.com/
 Debian: https://www.debian.org/
@@ -42,6 +46,12 @@ Visual Studio C++ Build tools: https://visualstudio.microsoft.com/visual-cpp-bui
 Rust Programming Language: https://www.rust-lang.org/
 Python: https://www.python.org/
 Go: https://go.dev/
+
+Nmap: https://nmap.org/
+Sqlmap: https://sqlmap.org/
+Wireshark: https://www.wireshark.org/
+Metasploit: https://www.metasploit.com/
+Burp Suite: https://portswigger.net/
 
 
 
