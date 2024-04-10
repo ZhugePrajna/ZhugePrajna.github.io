@@ -32,6 +32,7 @@ VirtualBox: https://www.virtualbox.org/
 QEMU: https://www.qemu.org/
 
 Discord: https://discord.com/
+GitHub Desktop: https://desktop.github.com/
 Steam: https://store.steampowered.com/
 Epic: https://store.epicgames.com/en-US/
 
@@ -46,12 +47,17 @@ Visual Studio C++ Build tools: https://visualstudio.microsoft.com/visual-cpp-bui
 Rust Programming Language: https://www.rust-lang.org/
 Python: https://www.python.org/
 Go: https://go.dev/
+OpenJDK(Adoptium): https://adoptium.net/
 
 Nmap: https://nmap.org/
 Sqlmap: https://sqlmap.org/
 Wireshark: https://www.wireshark.org/
 Metasploit: https://www.metasploit.com/
 Burp Suite: https://portswigger.net/
+IDA: https://hex-rays.com/
+Ghidra: https://github.com/NationalSecurityAgency/ghidra
+OllyDbg: https://www.ollydbg.de/
+
 
 
 
