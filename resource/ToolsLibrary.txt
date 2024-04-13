@@ -9,7 +9,7 @@ Free Download Manager: https://www.freedownloadmanager.org/
 [Text editing tools]
 Visual Studio Code: https://code.visualstudio.com/
 Notepad3: https://github.com/rizonesoft/Notepad3
-Geany: https://www.geany.org/
+Geany[<- Not recommended]: https://www.geany.org/
 
 [Video editing, image editing, recording and other media tools]
 Inkscape: https://inkscape.org/
@@ -24,31 +24,27 @@ More Free Tools Website: https://tjfree.com/
 MPV: https://mpv.io/
 ImageGlass: https://imageglass.org/
 
-[Other]
+[Hardware Driver]
 Nvidia: https://www.nvidia.com/download/index.aspx
 
+[Virtual Machine Software]
 VMware Workstation Pro: https://www.vmware.com/products/workstation-pro.html.html
 VirtualBox: https://www.virtualbox.org/
 QEMU: https://www.qemu.org/
 
-Discord: https://discord.com/
-GitHub Desktop: https://desktop.github.com/
-Steam: https://store.steampowered.com/
-Epic: https://store.epicgames.com/en-US/
-
+[Operating System]
 Ubuntu: https://ubuntu.com/
 Debian: https://www.debian.org/
 Kali Linux: https://www.kali.org/
 OpenBSD: https://www.openbsd.org/
 
-Microsoft Visual C++ Redistributable: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
-Visual Studio C++ Build tools: https://visualstudio.microsoft.com/visual-cpp-build-tools/
-
+[Programming Language]
 Rust Programming Language: https://www.rust-lang.org/
 Python: https://www.python.org/
 Go: https://go.dev/
 OpenJDK(Adoptium): https://adoptium.net/
 
+[Cyber Security Tools]
 Nmap: https://nmap.org/
 Sqlmap: https://sqlmap.org/
 Wireshark: https://www.wireshark.org/
@@ -58,6 +54,14 @@ IDA: https://hex-rays.com/
 Ghidra: https://github.com/NationalSecurityAgency/ghidra
 OllyDbg: https://www.ollydbg.de/
 
+[Other]
+Discord: https://discord.com/
+GitHub Desktop: https://desktop.github.com/
+Steam: https://store.steampowered.com/
+Epic: https://store.epicgames.com/en-US/
+
+Microsoft Visual C++ Redistributable: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
+Visual Studio C++ Build tools: https://visualstudio.microsoft.com/visual-cpp-build-tools/
 
 
 
