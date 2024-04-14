@@ -27,6 +27,7 @@ More Free Tools Website: https://tjfree.com/
 
 [Video and image viewing tools]
 MPV: https://mpv.io/
+VLC media player: https://www.videolan.org/
 ImageGlass: https://imageglass.org/
 
 [Hardware Driver]
