@@ -3,8 +3,13 @@
 
 [Browser plugins and portable tools]
 uBlock Origin: https://ublockorigin.com/
-Free Download Manager: https://www.freedownloadmanager.org/
 7-zip: https://www.7-zip.org/
+
+[BitTorrent Software]
+Free Download Manager: https://www.freedownloadmanager.org/
+qBittorrent: https://sourceforge.net/projects/qbittorrent/
+qBittorrent Enhanced Edition: https://github.com/c0re100/qBittorrent-Enhanced-Edition
+Transmission: https://transmissionbt.com/
 
 [Text editing tools]
 Visual Studio Code: https://code.visualstudio.com/
@@ -29,12 +34,12 @@ Nvidia: https://www.nvidia.com/download/index.aspx
 
 [Virtual Machine Software]
 VMware Workstation Pro: https://www.vmware.com/products/workstation-pro.html.html
-VirtualBox: https://www.virtualbox.org/
+VirtualBox[<- Not recommended]: https://www.virtualbox.org/
 QEMU: https://www.qemu.org/
 
 [Operating System]
-Ubuntu: https://ubuntu.com/
-Debian: https://www.debian.org/
+Ubuntu[<- Not recommended]: https://ubuntu.com/
+Debian[<- Not recommended]: https://www.debian.org/
 Kali Linux: https://www.kali.org/
 OpenBSD: https://www.openbsd.org/
 
