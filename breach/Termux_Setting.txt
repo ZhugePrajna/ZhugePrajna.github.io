@@ -160,4 +160,4 @@ Termux使用指北：
 
 	【Termux老版本漏洞】https://termux.dev/en/posts/general/2022/02/15/termux-apps-vulnerability-disclosures.html
 
-	【不推荐阅读的老教程】https://www.freebuf.com/geek/170510.html	
+	【不推荐阅读的老教程】https://www.freebuf.com/geek/170510.html
