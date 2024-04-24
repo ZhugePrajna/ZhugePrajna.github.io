@@ -63,6 +63,15 @@ Termux使用指北：
 
 		修改Termux问候语：
 			vim $PREFIX/etc/motd
+
+		改用zsh终端：
+			pkg install zsh
+			chsh -s zsh
+
+		Oh-My-ZSH安装配置：
+			sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+			【项目地址】https://github.com/ohmyzsh/ohmyzsh
+			【注意】我们不推荐使用ohmytermux，详细请自行体验
 [*************************************]
 
 	Root身份设置：
@@ -122,6 +131,7 @@ Termux使用指北：
 		【注意】：
 			WindowsOS操作具体参考PuTTY，这里不进行指导
 			SSH详细指令请使用搜索引擎进行查找
+			WindowsOS部分发行版内置OpenSSH，请自行设置
 # =================================================
 
 编程语言安装指北：
