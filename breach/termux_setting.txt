@@ -41,6 +41,8 @@ Termux使用指北：
 [*************************************]
 
 	第一次运行推荐操作：
+		termux-setup-storage
+		termux-change-repo
 		pkg update
 		pkg upgrade
 
@@ -85,6 +87,7 @@ Termux使用指北：
 
 	SSH配置：
 		Termux SSH连接Linux：
+			【注意】存在不确定性
 			pkg install openssh
 			ssh user@remote -p port
 				user 是您在远程机器上的用户名
@@ -97,7 +100,7 @@ Termux使用指北：
 				执行之后存在【id_rsa】和【id_rsa.pub】
 
 				将电脑端公钥【id_rsa.pub】拷贝至：
-					data\com.termux\files\home\.ssh
+					data\data\com.termux\files\home\.ssh
 				【注意】LinuxOS的key目录为【~/.ssh】
 
 				在Termux中找到【id_rsa.pub】，将其重命名为【authorized_keys】
@@ -158,6 +161,14 @@ Termux使用指北：
 	用Termux进行编程时，
 	我们也只推荐Python，
 	具体原因请各位读者自行探索。
+
+	关于想用Termux进行渗透，
+	或者别的什么黑客行为，
+	不推荐，就这样。
+
+	关于想用Termux当服务器的，
+	性能不会太好，
+	当个跳板机还凑合。
 # =================================================
 
 拓展阅读连接：
