@@ -15,6 +15,7 @@ Transmission: https://transmissionbt.com/
 Visual Studio Code: https://code.visualstudio.com/
 Notepad3: https://github.com/rizonesoft/Notepad3
 Geany[<- Not recommended]: https://www.geany.org/
+Visual Studio 2022: https://visualstudio.microsoft.com/zh-hans/free-developer-offers/
 
 [Video editing, image editing, recording and other media tools]
 Inkscape: https://inkscape.org/
