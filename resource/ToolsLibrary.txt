@@ -62,7 +62,6 @@ Ghidra: https://github.com/NationalSecurityAgency/ghidra
 OllyDbg: https://www.ollydbg.de/
 
 [Other]
-Discord: https://discord.com/
 GitHub Desktop: https://desktop.github.com/
 Steam: https://store.steampowered.com/
 Epic: https://store.epicgames.com/en-US/
