@@ -42,6 +42,7 @@ QEMU: https://www.qemu.org/
 [Operating System]
 Ubuntu[<- Not recommended]: https://ubuntu.com/
 Debian[<- Not recommended]: https://www.debian.org/
+Linux Mint: https://linuxmint.com/
 Kali Linux: https://www.kali.org/
 OpenBSD: https://www.openbsd.org/
 
