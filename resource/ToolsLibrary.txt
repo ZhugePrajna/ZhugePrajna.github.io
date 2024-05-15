@@ -4,6 +4,7 @@
 [Browser plugins and portable tools]
 uBlock Origin: https://ublockorigin.com/
 7-zip: https://www.7-zip.org/
+Rufus: https://rufus.ie/zh/
 
 [BitTorrent Software]
 Free Download Manager: https://www.freedownloadmanager.org/
