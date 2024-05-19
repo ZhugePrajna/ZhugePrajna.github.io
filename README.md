@@ -10,7 +10,7 @@
 
 当然也希望有朝一日可以研究出蕾西亚级hIE　Type-005[<- Maybe这个时代是完成不了的啦]
 
-编程语言相关: Rust语言为主，Python && Golang为辅...Bad C\C++!
+编程语言相关: LoverRPG and NEVER USED C\C++!
 
 # 博客相应问题回答
 
