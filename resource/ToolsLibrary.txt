@@ -5,6 +5,7 @@
 uBlock Origin: https://ublockorigin.com/
 7-zip: https://www.7-zip.org/
 Rufus: https://rufus.ie/zh/
+phpMyAdmin: https://www.phpmyadmin.net/
 
 [BitTorrent Software]
 Free Download Manager: https://www.freedownloadmanager.org/
@@ -41,6 +42,7 @@ VirtualBox[<- Not recommended]: https://www.virtualbox.org/
 QEMU: https://www.qemu.org/
 
 [Operating System]
+ITellYou: https://msdn.itellyou.cn/
 Ubuntu[<- Not recommended]: https://ubuntu.com/
 Debian[<- Not recommended]: https://www.debian.org/
 Linux Mint: https://linuxmint.com/
@@ -52,6 +54,10 @@ Rust Programming Language: https://www.rust-lang.org/
 Python: https://www.python.org/
 Go: https://go.dev/
 OpenJDK(Adoptium): https://adoptium.net/
+PHP: 
+  XAMPP: https://www.apachefriends.org/
+  Wampserver: https://wampserver.aviatechno.net/
+              https://sourceforge.net/projects/wampserver/
 
 [Cyber Security Tools]
 Nmap: https://nmap.org/
@@ -70,7 +76,12 @@ Epic: https://store.epicgames.com/en-US/
 
 Microsoft Visual C++ Redistributable: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
 Visual Studio C++ Build tools: https://visualstudio.microsoft.com/visual-cpp-build-tools/
-
+Apache: https://httpd.apache.org/
+KMS: https://github.com/zbezj/HEU_KMS_Activator
+OpenWRT: https://openwrt.org/
+OpenSSL: https://www.openssl.org/
+OpenSSH: https://www.openssh.com/
+LibreSSL: https://www.libressl.org/
 
 
 ETC...
