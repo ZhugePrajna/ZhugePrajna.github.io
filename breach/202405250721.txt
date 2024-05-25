@@ -1,7 +1,7 @@
 标题: VPN半匿名技术指导
 
 创建: 2024-05-25 07:21
-更新: 
+更新: 2024-05-25 19:21
 链接: 
 
 写前头:
@@ -47,12 +47,18 @@ FK WebRTC:
 	Google Chrome:
 		使用 Google 官方扩展程序【WebRTC Network Limiter】
 		它提供了一系列具有不同保护级别的选项
+		自己找到该扩展的设置选项
+		选择【Use my proxy server (if present)】即可
 		
 		或者口碑还不错的【WebRTC Leak Shield】
 		
 	Microsoft Edge:
 		edge://flags/#enable-webrtc-hide-local-ips-with-mdns
 		将这个选项改为Enable
+		【更新: 改了也泄露】
+
+		具体步骤和【Google Chrome】类似
+		照着上面操作就行了
 		
 	FireFox:
 		about:config
@@ -70,6 +76,7 @@ FK WebRTC:
 ============================================================
 DNS泄露问题, 麻烦也不麻烦，但不麻烦也麻烦
 有大牌VPN厂商的, 可以去询问客服
+如果使用的是开源软件之类的, 就去找相应的配置文件
 我这里只能提供FK.DNS的【微解决方案】
 效果具体如何, 因地而异吧
 
@@ -105,6 +112,9 @@ FK DNS:
 前面的操作完成后
 可以前往以下网站查看【修复状况】如何
 记得使用VPN
+当然也可以不使用VPN来查DNS泄露问题
+
+https://ipleak.net/
 
 https://www.ipaddress.my/?lang=zh_CN
 
