@@ -57,18 +57,22 @@ Go: https://go.dev/
 OpenJDK(Adoptium): https://adoptium.net/
 PHP: 
   XAMPP: https://www.apachefriends.org/
-  Wampserver: https://wampserver.aviatechno.net/
-              https://sourceforge.net/projects/wampserver/
+  Wampserver[<- Not recommended]: https://wampserver.aviatechno.net/
+                                  https://sourceforge.net/projects/wampserver/
 
 [Cyber Security Tools]
 Nmap: https://nmap.org/
 Sqlmap: https://sqlmap.org/
 Wireshark: https://www.wireshark.org/
-Metasploit: https://www.metasploit.com/
 Burp Suite: https://portswigger.net/
+
 IDA: https://hex-rays.com/
 Ghidra: https://github.com/NationalSecurityAgency/ghidra
 OllyDbg: https://www.ollydbg.de/
+WinHex: https://x-ways.net/winhex/
+
+Metasploit: https://www.metasploit.com/
+Hashcat: https://hashcat.net/hashcat/
 
 [Other]
 GitHub Desktop: https://desktop.github.com/
