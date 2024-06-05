@@ -70,9 +70,12 @@ IDA: https://hex-rays.com/
 Ghidra: https://github.com/NationalSecurityAgency/ghidra
 OllyDbg: https://www.ollydbg.de/
 WinHex: https://x-ways.net/winhex/
+Frida: https://frida.re/
 
 Metasploit: https://www.metasploit.com/
 Hashcat: https://hashcat.net/hashcat/
+
+Aircrack-ng: https://www.aircrack-ng.org/
 
 [Other]
 GitHub Desktop: https://desktop.github.com/
