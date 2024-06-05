@@ -1,0 +1,75 @@
+标题: FreeBSD + Xfce in VMware
+
+创建: 2024-06-06 06:30
+更新: 
+链接: 
+
+FreeBSD配置Xfce的一个小前提: Xorg & Graphic card driver
+由于这是在VMware上进行配置
+所以Graphic card driver只会以VMware的为基准
+有任何问题请看官方文档:
+	https://docs.freebsd.org/en/books/handbook/x11/
+	https://docs.freebsd.org/en/books/handbook/desktop/
+
+=================================================
+以下是操作步骤:
+
+	以root用户登录FreeBSD
+
+	pkg
+		安装pkg
+
+	pkg install xorg
+		安装Xorg
+
+	pw groupmod video -m username
+		username是root和你在安装FreeBSD添加的用户账号
+
+	pciconf -lv | grep -B4 VGA
+		该命令简单查看你的Graphics card参数
+
+	pkg install xf86-video-vmware
+		这里只负责VMware相关的Graphic card driver
+
+	sysrc kld_list+=vmwgfx
+
+	pkg install xfce
+
+	ee /etc/fstab
+		加入以下文本:
+			# Device                Mountpoint      FStype  Options         Dump    Pass#
+			proc                    /proc           procfs  rw              0       0
+
+	sysrc dbus_enable="YES"
+
+	pkg install lightdm lightdm-gtk-greeter
+
+	sysrc lightdm_enable="YES"
+
+=================================================
+认为下载速度慢
+可以采用USTC的源改善哈:
+
+	以root用户登录FreeBSD
+
+	ee /usr/local/etc/pkg/repos/FreeBSD.conf
+
+FreeBSD: {
+  url: "http://mirrors.ustc.edu.cn/freebsd-pkg/${ABI}/quarterly",
+}
+
+	或者采用滚动更新:
+	
+FreeBSD: {
+  url: "http://mirrors.ustc.edu.cn/freebsd-pkg/${ABI}/latest",
+}
+
+	保存后运行: pkg update -f
+
+=================================================
+若要采用HTTPS形式
+请先下载并安装security/ca_root_nss:
+
+	pkg install security/ca_root_nss
+	or
+	pkg install ca_root_nss
