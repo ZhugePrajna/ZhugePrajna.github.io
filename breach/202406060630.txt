@@ -104,6 +104,9 @@ FreeBSD: {
 
 安装Vmware Tools:
 
+	原文链接:
+		https://knowledge.broadcom.com/external/article?legacyId=2149806
+
 	For a desktop system (with X11) :
 		pkg install open-vm-tools
 
