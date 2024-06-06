@@ -102,13 +102,17 @@ FreeBSD: {
 
 	neofetch
 
-安装Vmware Tools:
+安装VMware Tools:
+
+	前情警告:
+		安装VMware Tools请使用官方源
+		请不要使用镜像源
 
 	原文链接:
 		https://knowledge.broadcom.com/external/article?legacyId=2149806
 
 	For a desktop system (with X11) :
-		pkg install open-vm-tools
+		sudo pkg install open-vm-tools
 
 	For a server system (no X11) :
-		pkg install open-vm-tools-nox11
+		sudo pkg install open-vm-tools-nox11
