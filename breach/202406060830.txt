@@ -19,3 +19,21 @@ Ubuntu, Debian, and Related OSes:
 
   For a server system (no X11) :
     sudo apt install open-vm-tools
+
+==============================================
+RHEL, Fedora and CentOS:
+
+  For a desktop system (with X11):
+    sudo yum install open-vm-tools-desktop
+
+  For a server system (no X11) :
+    sudo yum install open-vm-tools
+
+==============================================
+SLE and openSUSE:
+
+  For a desktop system (with X11):
+    zypper install open-vm-tools-desktop
+
+  For a server system (no X11) :
+    zypper install open-vm-tools
