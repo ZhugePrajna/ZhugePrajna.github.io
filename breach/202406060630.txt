@@ -52,6 +52,8 @@ FreeBSD配置Xfce的一个小前提: Xorg & Graphic card driver
 
 	以root用户登录FreeBSD
 
+	mkdir -p /usr/local/etc/pkg/repos
+
 	ee /usr/local/etc/pkg/repos/FreeBSD.conf
 
 FreeBSD: {
@@ -73,3 +75,29 @@ FreeBSD: {
 	pkg install security/ca_root_nss
 	or
 	pkg install ca_root_nss
+
+=================================================
+配置sudo:
+
+	以root用户登录FreeBSD
+
+	pkg install sudo
+
+	ee /usr/local/etc/sudoers
+
+	找到存在【root ALL=(ALL:ALL) ALL】的这一行
+	大致在第113行
+
+	添加: username ALL=(ALL:ALL) ALL
+		username是你在安装FreeBSD添加的用户账号
+
+	不推荐免密码使用sudo
+
+=================================================
+附件neofetch:
+
+	这个是可选操作, 闲的无聊可以试试看吧
+
+	sudo pkg install neofetch
+
+	neofetch
