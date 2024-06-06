@@ -101,3 +101,11 @@ FreeBSD: {
 	sudo pkg install neofetch
 
 	neofetch
+
+安装Vmware Tools:
+
+	For a desktop system (with X11) :
+		pkg install open-vm-tools
+
+	For a server system (no X11) :
+		pkg install open-vm-tools-nox11
