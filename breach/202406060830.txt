@@ -1,0 +1,21 @@
+标题: Install Open VM Tools
+
+创建: 2024-06-06 08:30
+更新: 
+链接: 
+
+本文来自VMware的官方文档:
+  https://docs.vmware.com/en/VMware-Tools/12.4.0/com.vmware.vsphere.vmwaretools.doc/GUID-C48E1F14-240D-4DD1-8D4C-25B6EBE4BB0F.html
+
+==============================================
+Ubuntu, Debian, and Related OSes:
+
+  sudo apt update
+
+  sudo apt upgrade
+
+  For a desktop system (with X11):
+    sudo apt install open-vm-tools-desktop
+
+  For a server system (no X11) :
+    sudo apt install open-vm-tools
