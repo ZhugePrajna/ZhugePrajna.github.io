@@ -16,7 +16,6 @@ Transmission: https://transmissionbt.com/
 [Text editing tools]
 Visual Studio Code: https://code.visualstudio.com/
 Notepad3: https://github.com/rizonesoft/Notepad3
-Geany[<- Not recommended]: https://www.geany.org/
 Visual Studio 2022: https://visualstudio.microsoft.com/zh-hans/free-developer-offers/
 
 [Video editing, image editing, recording and other media tools]
@@ -44,11 +43,17 @@ UTM: https://mac.getutm.app/
 
 [Operating System]
 ITellYou: https://msdn.itellyou.cn/
-Ubuntu[<- Not recommended]: https://ubuntu.com/
+
 Debian[<- Not recommended]: https://www.debian.org/
+Ubuntu[<- Not recommended]: https://ubuntu.com/
+
+Qubes OS: https://www.qubes-os.org/
 Linux Mint: https://linuxmint.com/
-Kali Linux: https://www.kali.org/
 OpenBSD: https://www.openbsd.org/
+
+Kali Linux: https://www.kali.org/
+Parrot OS: https://www.parrotsec.org/
+BlackArch Linux: https://blackarch.org/
 
 [Programming Language]
 Rust Programming Language: https://www.rust-lang.org/
