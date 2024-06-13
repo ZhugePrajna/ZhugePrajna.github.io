@@ -1,0 +1,30 @@
+标题: 实用性密码学软件推荐
+
+创建: 2024-06-14 07:21
+更新: 
+链接: 
+
+现代信息技术可以说主打一个【零信任】
+
+基于此, 鄙人便在这提供一些实用性密码学软件
+
+============================================
+GnuPG:
+
+	https://gnupg.org/
+	
+Gpg4win [GnuPG 的 Windows 版本]:
+
+	https://www.gpg4win.org/
+	
+============================================
+如果你想了解如何以及为何应该在电子通信中使用【GnuPG】
+请访问【EMAIL SELF-DEFENSE】:
+
+	https://emailselfdefense.fsf.org/en/
+	
+Arguing that you don't care about the right to privacy
+because you have nothing to hide is no different from saying
+you don't care about free speech because you have nothing to say.
+
+	– Edward Snowden
