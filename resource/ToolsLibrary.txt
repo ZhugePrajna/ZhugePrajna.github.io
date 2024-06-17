@@ -78,6 +78,10 @@ OllyDbg: https://www.ollydbg.de/
 WinHex: https://x-ways.net/winhex/
 Frida: https://frida.re/
 
+GnuPG: https://gnupg.org/
+Gpg4win: https://www.gpg4win.org/
+VeraCrypt: https://veracrypt.fr/en/Home.html
+
 Metasploit: https://www.metasploit.com/
 Hashcat: https://hashcat.net/hashcat/
 
@@ -95,9 +99,6 @@ KMS: https://github.com/zbezj/HEU_KMS_Activator
 OpenWRT: https://openwrt.org/
 OpenSSL: https://www.openssl.org/
 
-GnuPG: https://gnupg.org/
-Gpg4win: https://www.gpg4win.org/
-VeraCrypt: https://veracrypt.fr/en/Home.html
 
 
 ETC...
