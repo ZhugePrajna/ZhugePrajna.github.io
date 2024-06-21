@@ -17,6 +17,7 @@ Transmission: https://transmissionbt.com/
 Visual Studio Code: https://code.visualstudio.com/
 Notepad3: https://github.com/rizonesoft/Notepad3
 Visual Studio 2022: https://visualstudio.microsoft.com/zh-hans/free-developer-offers/
+Eclipse: https://www.eclipse.org/downloads/packages/
 Geany[<- Not recommended]: https://www.geany.org/
 
 [Video editing, image editing, recording and other media tools]
@@ -61,10 +62,10 @@ Rust Programming Language: https://www.rust-lang.org/
 Python: https://www.python.org/
 Go: https://go.dev/
 OpenJDK(Adoptium): https://adoptium.net/
-PHP: 
-  XAMPP: https://www.apachefriends.org/
-  Wampserver[<- Not recommended]: https://wampserver.aviatechno.net/
-                                  https://sourceforge.net/projects/wampserver/
+PHP:
+	XAMPP: https://www.apachefriends.org/
+	Wampserver: https://wampserver.aviatechno.net/
+                https://sourceforge.net/projects/wampserver/
 
 [Cyber Security Tools]
 Nmap: https://nmap.org/
