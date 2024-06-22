@@ -64,8 +64,9 @@ Go: https://go.dev/
 OpenJDK(Adoptium): https://adoptium.net/
 PHP:
 	XAMPP: https://www.apachefriends.org/
-	Wampserver: https://wampserver.aviatechno.net/
-                https://sourceforge.net/projects/wampserver/
+	Wampserver:
+		https://wampserver.aviatechno.net/
+		https://sourceforge.net/projects/wampserver/
 
 [Cyber Security Tools]
 Nmap: https://nmap.org/
