@@ -90,7 +90,7 @@ Hashcat: https://hashcat.net/hashcat/
 Aircrack-ng: https://www.aircrack-ng.org/
 
 [Other]
-GitHub Desktop: https://desktop.github.com/
+GitHub Desktop: https://github.com/apps/desktop
 Steam: https://store.steampowered.com/
 Epic: https://store.epicgames.com/en-US/
 
