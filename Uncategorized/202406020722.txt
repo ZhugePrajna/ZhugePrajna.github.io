@@ -35,7 +35,3 @@ get-appxpackage Microsoft.HEVCVideoExtension -allusers | remove-appxpackage
 
 十二个我用不着的东西,
 拜拜了您嘞!
-
-这个文件夹最近得盯紧点,
-多半有恶心的东西要来了:
-【C:\ProgramData\Windows Master Store】

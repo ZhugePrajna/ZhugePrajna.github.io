@@ -1,0 +1,33 @@
+标题: Rust编程阅读推荐指北
+
+创建: 2024-03-29 18:34
+更新: 
+链接: 
+
+不想多说什么, 就一句话:
+阅读官方文件, 对英语水平有信心的可以尝试阅读官方英语原文件。
+至于为什么, 非常简单:
+国内Rust编程群体小, 且水平参差不齐。
+在这样的基础上, 一些国内作者采用Rust Old Ver.版本进行教学,
+这实属将非简单的Rust, 再次拉高了难度水平。
+
+Rust面向的群体非小白, 或者是编程新手。
+当然各位也可以打破这种固有观念。
+Rust的门槛极高, 不像Python, 或者Golang那样简单。
+如果只是为了赚钱钱, 保证自己过一个较为安逸的生活,
+那就别选Rust, 而是选择Python, Golang, Ruby之类的高级语言。
+
+Rust国内岗位需求可以说, 基本上没有, 就算有也轮不到Rust菜鸟:)
+至于Rust怎么学, 这里便是最好的方法:
+
+=====官方推荐=====
+https://www.rust-lang.org/learn
+https://www.rust-lang.org/tools
+https://www.rust-lang.org/zh-CN/learn
+https://www.rust-lang.org/zh-CN/tools
+
+=====进阶书籍=====
+https://atomics.rs/
+https://rustx-labs.github.io/effective-rust-cn/
+https://rust-lang.github.io/async-book/
+https://rust-cli.github.io/book/index.html

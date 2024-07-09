@@ -43,17 +43,17 @@ Termux使用指北:
 
 	第一次运行推荐操作:
 		termux-setup-storage		#获取设备储存权限
-		termux-change-repo		#换源
-		pkg update			#换源之后的更新软件列表
-		pkg upgrade			#更新软件
+		termux-change-repo		    #换源
+		pkg update					#换源之后的更新软件列表
+		pkg upgrade					#更新软件
 
 	官方内置换源操作:
 		termux-change-repo
-		【注意】我们不提供手动换源操作，有需求看这里：
+		【注意】我们不提供手动换源操作, 有需求看这里:
 			https://mirrors.tuna.tsinghua.edu.cn/help/termux/
 
 	进行基本工具安装【按需下载】:
-		pkg install vim curl wget git unzip unrar tree -y		#自己看情况下载，这里只做部分推荐
+		pkg install vim curl wget git unzip unrar tree -y		#自己看情况下载, 这里只做部分推荐
 [*************************************]
 
 	Termux界面美化:
@@ -158,7 +158,7 @@ Termux使用指北:
 	Python:
 		pkg install python			#安装的是Python3
 		pkg install vim-python
-		【首次安装总会给您拉一大坨，不用在意就行】
+		【首次安装总会给您拉一大坨, 不用在意就行】
 		【这玩意还偷偷的给您安装"clang"】
 
 	Golang:
