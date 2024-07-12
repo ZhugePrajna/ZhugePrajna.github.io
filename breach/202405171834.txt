@@ -1,7 +1,7 @@
 标题: Rust编程阅读推荐指北
 
 创建: 2024-03-29 18:34
-更新: 
+更新: 2024-07-12 07:21
 链接: 
 
 不想多说什么, 就一句话:
@@ -27,7 +27,8 @@ https://www.rust-lang.org/zh-CN/learn
 https://www.rust-lang.org/zh-CN/tools
 
 =====进阶书籍=====
-https://atomics.rs/
-https://rustx-labs.github.io/effective-rust-cn/
+https://www.lurklurk.org/effective-rust/
+https://rust-unofficial.github.io/patterns/
+https://marabos.nl/atomics/
 https://rust-lang.github.io/async-book/
 https://rust-cli.github.io/book/index.html

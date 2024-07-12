@@ -90,17 +90,19 @@ Hashcat: https://hashcat.net/hashcat/
 Aircrack-ng: https://www.aircrack-ng.org/
 
 [Other]
+Lenovo Legion Toolkit: https://github.com/BartoszCichecki/LenovoLegionToolkit
 GitHub Desktop: https://github.com/apps/desktop
 Steam: https://store.steampowered.com/
 Epic: https://store.epicgames.com/en-US/
 
 Microsoft Visual C++ Redistributable: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
 Visual Studio C++ Build tools: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+
 Apache: https://httpd.apache.org/
-KMS: https://github.com/zbezj/HEU_KMS_Activator
 OpenWRT: https://openwrt.org/
 OpenSSL: https://www.openssl.org/
 
+KMS: https://github.com/zbezj/HEU_KMS_Activator
 
-
-ETC...
+[ETC]
+Ciallo～(∠·ω< )⌒★
