@@ -1,0 +1,48 @@
+标题: Metasploit渗透不完全指北
+
+创建: 2024-07-12 09:21
+更新: 
+链接: 
+
+资料来自Rapid7官方,
+若有任何技术上的问题,
+请联系Rapid7, 本人概不负责。
+
+Metasploit就不介绍了, 直奔主题吧。
+
+====================================
+Metasploitable 2:
+
+	这是一台MSF靶机, 适合初学者用来练手
+
+	官方提供的下载地址: https://sourceforge.net/projects/metasploitable/
+
+	由HD Moore所写的教程: https://docs.rapid7.com/metasploit/metasploitable-2-exploitability-guide/
+
+====================================
+Metasploitable 3:
+
+	同上也是靶机, 但操作空间更大, 灵活性可能更高
+
+	官方提供的项目地址(下载源已包含): https://github.com/rapid7/metasploitable3
+
+	官方的介绍: https://docs.rapid7.com/metasploit/setting-up-a-vulnerable-target
+
+	官方的wiki: https://github.com/rapid7/metasploitable3/wiki
+
+====================================
+Metasploitable 1:
+
+	年代久远, 有兴趣可以试试自己的水平
+
+	靶机下载地址: https://www.vulnhub.com/entry/metasploitable-1,28/
+
+====================================
+也就这么多了, 相关的教程不再提供
+请自行
+Google
+Bing
+或随便什么玩意
+能用就行的那种
+
+Have Fun :)
