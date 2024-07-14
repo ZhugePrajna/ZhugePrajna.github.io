@@ -10,7 +10,7 @@
 	来进行【计算机破坏行为】的
 	均与本人无关, 这是免责声明
 	【科学无国界, 世界存和平】
-	
+
 ============================================================
 RAyH4c前辈说的:
 	看很多人用ChatGPT走全局代理, 其实不是官方的风控有多厉害
@@ -49,9 +49,9 @@ FK WebRTC:
 		它提供了一系列具有不同保护级别的选项
 		自己找到该扩展的设置选项
 		选择【Use my proxy server (if present)】即可
-		
+
 		或者口碑还不错的【WebRTC Leak Shield】
-		
+
 	Microsoft Edge:
 		edge://flags/#enable-webrtc-hide-local-ips-with-mdns
 		将这个选项改为Enable
@@ -59,11 +59,11 @@ FK WebRTC:
 
 		具体步骤和【Google Chrome】类似
 		照着上面操作就行了
-		
+
 	FireFox:
 		about:config
 		在搜索栏中，键入media.peerconnection.enabled并双击首选项以将其值设置为false
-		
+
 	Safari:
 		前往 Safari >偏好设置
 		选中【在菜单栏中显示开发菜单】
@@ -85,14 +85,14 @@ FK DNS:
 	Windows Teredo【可用可不用, 看需求吧】:
 		乐意关就关吧
 		netsh interface teredo set state disabled
-		
+
 		关了想开回去就执行这个吧
 		netsh interface teredo set state type=default
-		
+
 	For IPv4:
 		1.1.1.1
 		1.0.0.1
-		
+
 	For IPv6:
 		2606:4700:4700::1111
 		2606:4700:4700::1001
@@ -134,11 +134,6 @@ https://privacytests.org/
 
 ============================================================
 后记:
-	不同厂商的VPN有不同的特性
-	我们不提供VPN售卖以及推荐
-	如果你是【PKU】, 【THU】或者其它什么高校的学生
-	请询问您们的技术管理人员有关相应技术的问题
-
 	有些技术总会过时的
 	至于要怎么做来防范一些问题的出现
 	恐怕只有成为问题本身才可以
