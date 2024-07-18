@@ -1,10 +1,10 @@
-标题: Metasploit渗透不完全指北
+标题: Virtual Machine Ethical Hacking Suggestion
 
 创建: 2024-07-12 09:21
-更新: 2024-07-12 13:14
+更新: 2024-07-18 08:00
 链接: 
 
-Metasploit就不介绍了, 直奔主题吧。
+实在是闲的无聊就去玩几台虚拟机吧
 
 ====================================
 Metasploitable 1:
@@ -37,7 +37,7 @@ Metasploitable 3:
 OWASP Broken Web Applications:
 
 	一台由OWASP制作的BWA靶机
-	
+
 	靶机下载地址: https://sourceforge.net/projects/owaspbwa/
 
 ====================================

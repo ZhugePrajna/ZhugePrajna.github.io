@@ -1,0 +1,85 @@
+标题: Learning Form Tk's Writing With ChatGPT3.5
+
+创建: 2024-07-18 07:21
+更新: 
+链接: 
+
+ffmpeg 处理某些视频源 (比如某些DVD) 时, 输出的视频画面中会出现横向条纹。
+运动画面尤其明显, 就像用碎纸机把画面切成细条再拼起来一样。
+这一般是因为视频源是隔行扫描的。
+隔行扫描是 CRT 显示器时代的历史遗留问题, 有兴趣可以自己去查一下。
+
+ffmpeg 中有多个滤镜可以解决该问题,
+其中 bwdif 在效果和速度上比较均衡。
+可参考如下命令行操作:
+
+ffmpeg -i "concat:VTS_01_1.VOB|VTS_01_2.VOB|VTS_01_3.VOB" -vf bwdif -vcodec libx264 -acodec copy output.mkv
+
+ffmpeg:
+	这是一个开源的多媒体处理工具, 可以用来处理音频和视频文件。
+
+-i "concat:VTS_01_1.VOB|VTS_01_2.VOB|VTS_01_3.VOB":
+	-i 表示输入, 后面紧跟的是用 concat: 指定的多个文件名, 用 | 分隔。
+	这个命令的意图是将 VTS_01_1.VOB、VTS_01_2.VOB 和 VTS_01_3.VOB 这三个文件连接起来作为输入。
+
+-vf bwdif:
+	-vf 表示视频滤镜。
+	bwdif 是一种滤镜, 用来进行反交织处理,
+	常用于去除视频中的隔行扫描效果, 提升画质。
+
+-vcodec libx264:
+	-vcodec 指定了视频编码器, 这里是 libx264,
+	它是一个高效的 H.264 视频编码器,
+	用于将视频编码为 H.264 格式。
+
+-acodec copy:
+	-acodec 指定了音频编码器
+	copy 表示直接复制输入文件的音频流, 而不重新编码。
+	这样做可以避免音频质量损失和耗时的重新编码过程。
+
+output.mkv:
+	这是输出文件的文件名和格式。
+	在这里, 输出的文件名是 output.mkv,
+	表示输出为 Matroska 多媒体容器格式,
+	其中包含了经过处理的视频和原始音频流。
+
+=======================================================
+curl "https://suggestqueries-clients6.youtube.com/complete/search?clinet=youtube&hl=ja&gs_ri=youtube&ds=yt&cp=5&q=china" 2>/dev/null | jsonp
+
+curl:
+	命令行工具, 用于在终端中进行网络请求。
+	在这里, 它被用来向指定的URL发出GET请求。
+
+"URL":
+	这是curl请求的URL。
+	它指向YouTube的搜索建议API, 请求参数包括:
+
+		client=youtube: 指定了客户端为YouTube
+		hl=ja: 指定了语言为日语 ("ja"代表日语)
+		gs_ri=youtube: 用于指定Google搜索的相关信息, 这里是针对YouTube
+		ds=yt: 指定数据源为YouTube
+		cp=5: 指定了一个参数, 可能用于分页或其他控制
+		q=china: 指定了搜索的查询词为 "china"
+		2>/dev/null: 这部分将命令的标准错误重定向到/dev/null, 这样错误信息将不会输出到终端, 只有标准输出会显示
+
+jsonp:
+	这部分指示命令将返回的数据作为JSONP格式进行解析。
+
+=======================================================
+openssl s_client -connect domain:port | openssl x509 -noout -text | grep DNS
+
+openssl s_client -connect domain:port:
+	这部分命令使用 OpenSSL 工具中的 s_client 子命令, 用于建立到指定域名 (domain) 和端口号 (port) 的 SSL/TLS 连接。
+	例如, 如果你要连接到 example.com 的 HTTPS 端口 (默认是 443) ,
+	则命令可能是 openssl s_client -connect example.com:443。
+
+openssl x509 -noout -text:
+	这部分命令使用 openssl x509 工具来解析 X.509 格式的证书, 具体选项:
+	
+		-noout: 不输出证书本身, 只显示文本信息。
+		-text: 显示证书的详细文本信息, 包括证书的颁发者、有效期、公钥等信息。
+		
+grep DNS:
+	grep 是一个文本搜索工具, 用于过滤输出。
+	在这里, grep DNS 的作用是仅显示包含 DNS 字段的行,
+	这些行通常包含证书的主题备用名称 (Subject Alternative Name, SAN) , 即允许的域名列表。

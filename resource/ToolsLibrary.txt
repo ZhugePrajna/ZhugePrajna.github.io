@@ -50,7 +50,6 @@ Debian[<- Not recommended]: https://www.debian.org/
 Ubuntu[<- Not recommended]: https://ubuntu.com/
 
 Qubes OS: https://www.qubes-os.org/
-Linux Mint: https://linuxmint.com/
 OpenBSD: https://www.openbsd.org/
 
 Kali Linux: https://www.kali.org/
@@ -89,9 +88,6 @@ Hashcat: https://hashcat.net/hashcat/
 
 Aircrack-ng: https://www.aircrack-ng.org/
 
-0'4N98*1+L)i*#9K0L-U0M4L5Q4#*8001'9B@%014cJdBNFX3cJU,841C5C$864&,$NPC%-i3e-YC9NS0M986$01*M-Y-`
-0'4N98*1+L)i*#9N3Q8`+c3M5Q4$*8*6,%"B@%*5)M8d*59N1'4()5Xj9#0$8L*$,#FY96C14b)Y*c0B4#8U6$43*9&%68-a0%S
-
 [Other]
 Lenovo Legion Toolkit: https://github.com/BartoszCichecki/LenovoLegionToolkit
 GitHub Desktop: https://github.com/apps/desktop
@@ -101,11 +97,12 @@ Epic: https://store.epicgames.com/en-US/
 Microsoft Visual C++ Redistributable: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
 Visual Studio C++ Build tools: https://visualstudio.microsoft.com/visual-cpp-build-tools/
 
-Apache: https://httpd.apache.org/
 OpenWRT: https://openwrt.org/
 OpenSSL: https://www.openssl.org/
+OpenVPN: https://openvpn.net/community-downloads/
 
 KMS: https://github.com/zbezj/HEU_KMS_Activator
+More: https://zhugeprajna.github.io/resource/openkey.asc
 
 [ETC]
 Ciallo～(∠·ω< )⌒★
