@@ -96,13 +96,15 @@ Epic: https://store.epicgames.com/en-US/
 
 Microsoft Visual C++ Redistributable: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
 Visual Studio C++ Build tools: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+DOTNET 8.0: https://dotnet.microsoft.com/en-us/download/dotnet/8.0
 
 OpenWRT: https://openwrt.org/
 OpenSSL: https://www.openssl.org/
 OpenVPN: https://openvpn.net/community-downloads/
 
 KMS: https://github.com/zbezj/HEU_KMS_Activator
-More: https://zhugeprajna.github.io/resource/openkey.asc
+v2rayN: https://github.com/2dust/v2rayN
+v2rayNG: https://github.com/2dust/v2rayNG
 
 [ETC]
 Ciallo～(∠·ω< )⌒★
