@@ -1,11 +1,15 @@
 #Tools Library#
 #We need a more creative open source era#
 
-[Browser plugins and portable tools]
+[Browser Plugins & Portable Tools]
 uBlock Origin: https://ublockorigin.com/
 7-zip: https://www.7-zip.org/
 Rufus: https://rufus.ie/zh/
-phpMyAdmin: https://www.phpmyadmin.net/
+
+[Hardware Diagnostic Tools]
+CPU-Z: https://www.cpuid.com/softwares/cpu-z.html
+TechPowerUp GPU-Z: https://www.techpowerup.com/gpuz/
+CrystalDiskInfo: https://crystalmark.info/en/software/crystaldiskinfo/
 
 [BitTorrent Software]
 Free Download Manager: https://www.freedownloadmanager.org/
@@ -13,7 +17,7 @@ qBittorrent: https://sourceforge.net/projects/qbittorrent/
 qBittorrent Enhanced Edition: https://github.com/c0re100/qBittorrent-Enhanced-Edition
 Transmission: https://transmissionbt.com/
 
-[Text editing tools]
+[Text Editing Tools]
 Visual Studio Code: https://code.visualstudio.com/
 Notepad3: https://github.com/rizonesoft/Notepad3
 Visual Studio 2022: https://visualstudio.microsoft.com/zh-hans/free-developer-offers/
@@ -29,7 +33,7 @@ Shotcut: https://www.shotcut.org/
 Blender: https://www.blender.org/
 More Free Tools Website: https://tjfree.com/
 
-[Video and image viewing tools]
+[Video & Image Viewing Tools]
 MPV: https://mpv.io/
 VLC media player: https://www.videolan.org/
 ImageGlass: https://imageglass.org/
@@ -66,6 +70,15 @@ PHP:
 	Wampserver:
 		https://wampserver.aviatechno.net/
 		https://sourceforge.net/projects/wampserver/
+
+[Database & Management Tools]
+MySQL: https://dev.mysql.com/downloads/
+MariaDB: https://mariadb.org/
+PostgreSQL: https://www.postgresql.org/
+SQLite: https://sqlite.org/
+phpMyAdmin: https://www.phpmyadmin.net/
+Adminer: https://www.adminer.org/
+HeidiSQL: https://www.heidisql.com/
 
 [Cyber Security Tools]
 Nmap: https://nmap.org/
