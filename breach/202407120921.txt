@@ -1,19 +1,81 @@
 标题: Virtual Machine Ethical Hacking Suggestion
 
 创建: 2024-07-12 09:21
-更新: 2024-07-18 08:00
+更新: 2024-07-21 07:00
 链接: 
 
-实在是闲的无聊就去玩几台虚拟机吧
+普通人学习都有个过程, 毕竟不是天才
+所以要怎么做, 那就一步一个脚印, 慢慢来
+越急躁, 在学习上所领悟到的知识便越浅薄
+如此, 静下心来, 去研究如何攻破这些虚拟机
+
+相关渗透技巧以及步骤互联网都有提供
+如遇某些困难, 先思考, 后解答才是真理
 
 ====================================
+[-初级水平-]
+就当作是渗透的入门
+
+KIOPTRIX: LEVEL 1 (#1)
+	https://www.vulnhub.com/entry/kioptrix-level-1-1,22/
+
+KIOPTRIX: LEVEL 1.1 (#2)
+	https://www.vulnhub.com/entry/kioptrix-level-11-2,23/
+
+KIOPTRIX: LEVEL 1.2 (#3)
+	https://www.vulnhub.com/entry/kioptrix-level-12-3,24/
+
+KIOPTRIX: LEVEL 1.3 (#4)
+	https://www.vulnhub.com/entry/kioptrix-level-13-4,25/
+
+KIOPTRIX: 2014 (#5)
+	https://www.vulnhub.com/entry/kioptrix-2014-5,62/
+
+DC: 3.2
+	https://www.vulnhub.com/entry/dc-32,312/
+
+SAR: 1
+	https://www.vulnhub.com/entry/sar-1,425/
+
+====================================
+[-初级水平 -> 中级水平-]
+算是对之前学习的小测试
+
+BREACH: 1
+	https://www.vulnhub.com/entry/breach-1,152/
+
+DIGITALWORLD.LOCAL: BRAVERY
+	https://www.vulnhub.com/entry/digitalworldlocal-bravery,281/
+
+DERPNSTINK: 1
+	https://www.vulnhub.com/entry/derpnstink-1,221/
+
+DC: 6
+	https://www.vulnhub.com/entry/dc-6,315/
+
+DJINN: 1
+	https://www.vulnhub.com/entry/djinn-1,397/
+
+DIGITALWORLD.LOCAL: DEVELOPMENT
+	https://www.vulnhub.com/entry/digitalworldlocal-development,280/
+
+====================================
+[基础测试 (难度评级: 中级)]
+尝试使用五种及以上的方法完成渗透测试
+
+TYPHOON: 1.02
+	https://www.vulnhub.com/entry/typhoon-102,267/
+
+====================================
+[Metasploit制作的虚拟机]
+不做任何推荐, 学有余力的朋友可以试一试
+
 Metasploitable 1:
 
 	年代久远, 有兴趣可以试试自己的水平
 
 	靶机下载地址: https://www.vulnhub.com/entry/metasploitable-1,28/
 
-====================================
 Metasploitable 2:
 
 	这是一台MSF靶机, 适合初学者用来练手
@@ -22,7 +84,6 @@ Metasploitable 2:
 
 	由HD Moore所写的教程: https://docs.rapid7.com/metasploit/metasploitable-2-exploitability-guide/
 
-====================================
 Metasploitable 3:
 
 	同上也是靶机, 但操作空间更大, 灵活性可能更高
@@ -34,9 +95,10 @@ Metasploitable 3:
 	官方的wiki: https://github.com/rapid7/metasploitable3/wiki
 
 ====================================
-OWASP Broken Web Applications:
+[OWASP制作的虚拟机]
+主要用作WEB渗透测试, 对这方面有兴趣的朋友可以试一试
 
-	一台由OWASP制作的BWA靶机
+OWASP Broken Web Applications:
 
 	靶机下载地址: https://sourceforge.net/projects/owaspbwa/
 
