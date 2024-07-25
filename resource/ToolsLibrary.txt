@@ -66,10 +66,10 @@ Python: https://www.python.org/
 Go: https://go.dev/
 OpenJDK(Adoptium): https://adoptium.net/
 PHP:
-	XAMPP: https://www.apachefriends.org/
-	Wampserver:
-		https://wampserver.aviatechno.net/
-		https://sourceforge.net/projects/wampserver/
+    XAMPP: https://www.apachefriends.org/
+    Wampserver:
+        https://wampserver.aviatechno.net/
+        https://sourceforge.net/projects/wampserver/
 
 [Database & Management Tools]
 MySQL: https://dev.mysql.com/downloads/

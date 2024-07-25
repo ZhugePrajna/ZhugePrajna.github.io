@@ -1,0 +1,80 @@
+标题: XIAOMI与我的ADB操作
+
+创建: 2024-07-25 09:27
+更新: 
+链接: 
+
+小米手机到手后, 我的体验感非常的差
+同一个软件, 在华为手机那儿是没有开屏广告的, 这一点我非常确定
+而到了小米手机这儿, 开屏广告就接踵而至, 弄得我好不愉快
+
+在查遍互联网所提供给我的信息后
+我决定将这件事情记录下来, 以此告诉未来的我们
+
+============================================
+[-前提准备-]
+0x00:
+    手机开启 "开发者模式" , 同时启用 "USB调试"
+
+0x01:
+    在 Android 开发者官网下载包含 ADB 的 SDK 平台工具
+    https://developer.android.com/tools/releases/platform-tools?hl=zh-cn
+
+============================================
+[-开始操作-]
+
+0x00:
+    在解压后的 platform-tools 文件夹中打开 Windows 终端
+
+    执行命令 .\adb.exe devices
+
+    首次运行需要在手机上授权电脑进行USB调试
+
+    之后执行 .\adb.exe shell
+
+    这一步后就可以对手机进行便捷的ADB调试了
+
+0x01:
+    pm list packages                                        # 列出所有软件
+    pm list packages -s                                     # 列出系统软件
+    pm list packages -3                                     # 列出其他软件
+    pm list packages -d                                     # 列出已禁用软件
+    pm list packages -e                                     # 列出已启用软件
+
+    dumpsys package packagename                             # 查看软件详细信息
+
+    pm path packagename                                     # 查看软件安装路径
+
+    am force-stop packagename                               # 停止软件运行
+
+    pm disable-user packagename                             # 禁用软件
+
+    pm enable packagename                                   # 恢复软件
+
+    pm uninstall -k --user 0 packagename                    # 卸载软件, 但保留用户数据
+
+    pm uninstall --user 0 packagename                       # 卸载软件, 不保留用户数据
+
+    pm install-existing --user 0 packagename                # 重新安装/恢复应用
+
+0x02:
+    在完成操作后执行 exit
+
+    在终端使用 .\adb.exe reboot 命令重启设备
+
+============================================
+[-个人卸载列表-]
+
+com.miui.analytics                                          # 小米广告分析 (必删)
+
+com.miui.systemAdSolution                                   # 小米系统广告解决方案 (必删)
+
+com.miui.hybrid                                             # 小米快应用
+
+com.miui.personalassistant                                  # 智能助理
+
+com.android.browser                                         # 小米浏览器
+
+com.sohu.inputmethod.sogou.xiaomi                           # 搜狗输入法小米版
+
+com.android.quicksearchbox                                  # 搜索
