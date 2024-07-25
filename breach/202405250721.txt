@@ -5,19 +5,19 @@
 链接: 
 
 写前头:
-	本文章仅用于技术指导
-	任何采用本文章所提供的技术
-	来进行【计算机破坏行为】的
-	均与本人无关, 这是免责声明
-	【科学无国界, 世界存和平】
+    本文章仅用于技术指导
+    任何采用本文章所提供的技术
+    来进行【计算机破坏行为】的
+    均与本人无关, 这是免责声明
+    【科学无国界, 世界存和平】
 
 ============================================================
 RAyH4c前辈说的:
-	看很多人用ChatGPT走全局代理, 其实不是官方的风控有多厉害
-	是因为官方默认使用的是QUIC技术, API通信默认走的是UDP
-	而大多数按域名和IP范围分流的策略代理程序默认没有配UDP中继
-	所以只要浏览器关闭默认QUIC, 或者配一下代理支持中继UDP就可以了
-	PS: 很多人搞攻防挂了代理还泄露IP也是这个TIPS
+    看很多人用ChatGPT走全局代理, 其实不是官方的风控有多厉害
+    是因为官方默认使用的是QUIC技术, API通信默认走的是UDP
+    而大多数按域名和IP范围分流的策略代理程序默认没有配UDP中继
+    所以只要浏览器关闭默认QUIC, 或者配一下代理支持中继UDP就可以了
+    PS: 很多人搞攻防挂了代理还泄露IP也是这个TIPS
 
 针对RAyH4c前辈说的事
 我这里就直接提供FK.QUIC的【微解决方案】
@@ -27,15 +27,15 @@ RAyH4c前辈说的:
 
 FK QUIC:
 
-	Google Chrome:
-		chrome://flags/#enable-quic
+    Google Chrome:
+        chrome://flags/#enable-quic
 
-	Microsoft Edge:
-		edge://flags/#enable-quic
+    Microsoft Edge:
+        edge://flags/#enable-quic
 
-	FireFox:
-		about:config
-		禁用network.http.http3.enable选项
+    FireFox:
+        about:config
+        禁用network.http.http3.enable选项
 
 ============================================================
 WebRTC泄露已经有很长一段时间了
@@ -44,31 +44,31 @@ WebRTC泄露已经有很长一段时间了
 
 FK WebRTC:
 
-	Google Chrome:
-		使用 Google 官方扩展程序【WebRTC Network Limiter】
-		它提供了一系列具有不同保护级别的选项
-		自己找到该扩展的设置选项
-		选择【Use my proxy server (if present)】即可
+    Google Chrome:
+        使用 Google 官方扩展程序【WebRTC Network Limiter】
+        它提供了一系列具有不同保护级别的选项
+        自己找到该扩展的设置选项
+        选择【Use my proxy server (if present)】即可
 
-		或者口碑还不错的【WebRTC Leak Shield】
+        或者口碑还不错的【WebRTC Leak Shield】
 
-	Microsoft Edge:
-		edge://flags/#enable-webrtc-hide-local-ips-with-mdns
-		将这个选项改为Enable
-		【更新: 改了也泄露】
+    Microsoft Edge:
+        edge://flags/#enable-webrtc-hide-local-ips-with-mdns
+        将这个选项改为Enable
+        【更新: 改了也泄露】
 
-		具体步骤和【Google Chrome】类似
-		照着上面操作就行了
+        具体步骤和【Google Chrome】类似
+        照着上面操作就行了
 
-	FireFox:
-		about:config
-		在搜索栏中，键入media.peerconnection.enabled并双击首选项以将其值设置为false
+    FireFox:
+        about:config
+        在搜索栏中，键入media.peerconnection.enabled并双击首选项以将其值设置为false
 
-	Safari:
-		前往 Safari >偏好设置
-		选中【在菜单栏中显示开发菜单】
-		在顶部菜单栏中一个名为【开发】的新部分
-		选择 WebRTC，然后单击禁用 ICE 候选限制
+    Safari:
+        前往 Safari >偏好设置
+        选中【在菜单栏中显示开发菜单】
+        在顶部菜单栏中一个名为【开发】的新部分
+        选择 WebRTC，然后单击禁用 ICE 候选限制
 
 有些浏览器存在插件扩展
 也可以使用插件来【半修复】
@@ -82,27 +82,27 @@ DNS泄露问题, 麻烦也不麻烦，但不麻烦也麻烦
 
 FK DNS:
 
-	Windows Teredo【可用可不用, 看需求吧】:
-		乐意关就关吧
-		netsh interface teredo set state disabled
+    Windows Teredo【可用可不用, 看需求吧】:
+        乐意关就关吧
+        netsh interface teredo set state disabled
 
-		关了想开回去就执行这个吧
-		netsh interface teredo set state type=default
+        关了想开回去就执行这个吧
+        netsh interface teredo set state type=default
 
-	For IPv4:
-		1.1.1.1
-		1.0.0.1
+    For IPv4:
+        1.1.1.1
+        1.0.0.1
 
-	For IPv6:
-		2606:4700:4700::1111
-		2606:4700:4700::1001
+    For IPv6:
+        2606:4700:4700::1111
+        2606:4700:4700::1001
 
-	Open DoH:
-		https://cloudflare-dns.com/dns-query
-		https://one.one.one.one/dns-query
+    Open DoH:
+        https://cloudflare-dns.com/dns-query
+        https://one.one.one.one/dns-query
 
 设置完毕后请去该站点检查下哈
-	https://1.1.1.1/help
+    https://1.1.1.1/help
 
 如果出现一些问题
 俺也没办法
@@ -134,9 +134,9 @@ https://privacytests.org/
 
 ============================================================
 后记:
-	有些技术总会过时的
-	至于要怎么做来防范一些问题的出现
-	恐怕只有成为问题本身才可以
-	这便是技术不断更新的理念
-	唯有问题才能解决问题
-	存于世界的科技才会不断发展
+    有些技术总会过时的
+    至于要怎么做来防范一些问题的出现
+    恐怕只有成为问题本身才可以
+    这便是技术不断更新的理念
+    唯有问题才能解决问题
+    存于世界的科技才会不断发展

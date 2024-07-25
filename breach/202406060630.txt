@@ -8,111 +8,111 @@ FreeBSD配置Xfce的一个小前提: Xorg & Graphic card driver
 由于这是在VMware上进行配置
 所以Graphic card driver只会以VMware的为基准
 有任何问题请看官方文档:
-	https://docs.freebsd.org/en/books/handbook/x11/
-	https://docs.freebsd.org/en/books/handbook/desktop/
+    https://docs.freebsd.org/en/books/handbook/x11/
+    https://docs.freebsd.org/en/books/handbook/desktop/
 
 =================================================
 以下是操作步骤:
 
-	以root用户登录FreeBSD
+    以root用户登录FreeBSD
 
-	pkg
-		安装pkg
+    pkg
+        安装pkg
 
-	pkg install xorg
-		安装Xorg
+    pkg install xorg
+        安装Xorg
 
-	pw groupmod video -m username
-		username是root和你在安装FreeBSD添加的用户账号
+    pw groupmod video -m username
+        username是root和你在安装FreeBSD添加的用户账号
 
-	pciconf -lv | grep -B4 VGA
-		该命令简单查看你的Graphics card参数
+    pciconf -lv | grep -B4 VGA
+        该命令简单查看你的Graphics card参数
 
-	pkg install xf86-video-vmware
-		这里只负责VMware相关的Graphic card driver
+    pkg install xf86-video-vmware
+        这里只负责VMware相关的Graphic card driver
 
-	sysrc kld_list+=vmwgfx
+    sysrc kld_list+=vmwgfx
 
-	pkg install xfce
+    pkg install xfce
 
-	ee /etc/fstab
-		加入以下文本:
-			# Device                Mountpoint      FStype  Options         Dump    Pass#
-			proc                    /proc           procfs  rw              0       0
+    ee /etc/fstab
+        加入以下文本:
+            # Device                Mountpoint      FStype  Options         Dump    Pass#
+            proc                    /proc           procfs  rw              0       0
 
-	sysrc dbus_enable="YES"
+    sysrc dbus_enable="YES"
 
-	pkg install lightdm lightdm-gtk-greeter
+    pkg install lightdm lightdm-gtk-greeter
 
-	sysrc lightdm_enable="YES"
+    sysrc lightdm_enable="YES"
 
 =================================================
 认为下载速度慢
 可以采用USTC的源改善哈:
 
-	以root用户登录FreeBSD
+    以root用户登录FreeBSD
 
-	mkdir -p /usr/local/etc/pkg/repos
+    mkdir -p /usr/local/etc/pkg/repos
 
-	ee /usr/local/etc/pkg/repos/FreeBSD.conf
+    ee /usr/local/etc/pkg/repos/FreeBSD.conf
 
 FreeBSD: {
   url: "http://mirrors.ustc.edu.cn/freebsd-pkg/${ABI}/quarterly",
 }
 
-	或者采用滚动更新:
-	
+    或者采用滚动更新:
+
 FreeBSD: {
   url: "http://mirrors.ustc.edu.cn/freebsd-pkg/${ABI}/latest",
 }
 
-	保存后运行: pkg update -f
+    保存后运行: pkg update -f
 
 =================================================
 若要采用HTTPS形式
 请先下载并安装security/ca_root_nss:
 
-	pkg install security/ca_root_nss
-	or
-	pkg install ca_root_nss
+    pkg install security/ca_root_nss
+    or
+    pkg install ca_root_nss
 
 =================================================
 配置sudo:
 
-	以root用户登录FreeBSD
+    以root用户登录FreeBSD
 
-	pkg install sudo
+    pkg install sudo
 
-	ee /usr/local/etc/sudoers
+    ee /usr/local/etc/sudoers
 
-	找到存在【root ALL=(ALL:ALL) ALL】的这一行
-	大致在第113行
+    找到存在【root ALL=(ALL:ALL) ALL】的这一行
+    大致在第113行
 
-	添加: username ALL=(ALL:ALL) ALL
-		username是你在安装FreeBSD添加的用户账号
+    添加: username ALL=(ALL:ALL) ALL
+        username是你在安装FreeBSD添加的用户账号
 
-	不推荐免密码使用sudo
+    不推荐免密码使用sudo
 
 =================================================
 附件neofetch:
 
-	这个是可选操作, 闲的无聊可以试试看吧
+    这个是可选操作, 闲的无聊可以试试看吧
 
-	sudo pkg install neofetch
+    sudo pkg install neofetch
 
-	neofetch
+    neofetch
 
 安装VMware Tools:
 
-	前情警告:
-		安装VMware Tools请使用官方源
-		请不要使用镜像源
+    前情警告:
+        安装VMware Tools请使用官方源
+        请不要使用镜像源
 
-	原文链接:
-		https://knowledge.broadcom.com/external/article?legacyId=2149806
+    原文链接:
+        https://knowledge.broadcom.com/external/article?legacyId=2149806
 
-	For a desktop system (with X11) :
-		sudo pkg install open-vm-tools
+    For a desktop system (with X11) :
+        sudo pkg install open-vm-tools
 
-	For a server system (no X11) :
-		sudo pkg install open-vm-tools-nox11
+    For a server system (no X11) :
+        sudo pkg install open-vm-tools-nox11

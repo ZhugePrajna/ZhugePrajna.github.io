@@ -7,42 +7,42 @@
 因为被奸商坑了红尖尖
 故作此文, 告诫后者
 警告:
-	对计算机硬件进行测试可能导致无法挽回的后果
-	本人已尽到提醒的义务, 若产生任何测试问题
-	本人概不负责!!! 
+    对计算机硬件进行测试可能导致无法挽回的后果
+    本人已尽到提醒的义务, 若产生任何测试问题
+    本人概不负责!!! 
 
 =============================================================
 测试CPU & GPU的工具:
 
-	CPU-Z
-	https://www.cpuid.com/
+    CPU-Z
+    https://www.cpuid.com/
 
-	TechPowerUp GPU-Z
-	https://www.techpowerup.com/gpuz/
+    TechPowerUp GPU-Z
+    https://www.techpowerup.com/gpuz/
 
-	Furmark
-	https://www.geeks3d.com/furmark/
+    Furmark
+    https://www.geeks3d.com/furmark/
 
 =============================================================
 测试Disk的工具:
 
-	AS SSD Benchmark
-	https://as-ssd-benchmark.en.softonic.com/
+    AS SSD Benchmark
+    https://as-ssd-benchmark.en.softonic.com/
 
-	ATTO Disk Benchmark
-	https://www.techpowerup.com/download/atto-disk-benchmark/
+    ATTO Disk Benchmark
+    https://www.techpowerup.com/download/atto-disk-benchmark/
 
-	CrystalDiskMark
-	https://crystalmark.info/en/software/crystaldiskmark/
+    CrystalDiskMark
+    https://crystalmark.info/en/software/crystaldiskmark/
 
-	CrystalDiskInfo
-	https://crystalmark.info/en/software/crystaldiskinfo/
+    CrystalDiskInfo
+    https://crystalmark.info/en/software/crystaldiskinfo/
 
-	DiskGenius
-	https://www.diskgenius.cn/
+    DiskGenius
+    https://www.diskgenius.cn/
 
 =============================================================
 综合测试的专业性工具:
 
-	AIDA64
-	https://www.aida64.com/downloads
+    AIDA64
+    https://www.aida64.com/downloads

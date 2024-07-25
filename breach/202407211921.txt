@@ -10,22 +10,22 @@
 所有操作均在VMware Workstation Pro上进行
 
 重要申明:
-	相关技术仅用于 Typhoon 1.02 虚拟机
-	若您将某些技术运用在未经授权的渗透测试中
-	概不负责, 谢谢配合
+    相关技术仅用于 Typhoon 1.02 虚拟机
+    若您将某些技术运用在未经授权的渗透测试中
+    概不负责, 谢谢配合
 
 =====================================
 [-首要准备-]
 
 [-TYPHOON: 1.02-]虚拟机:
-	https://www.vulnhub.com/entry/typhoon-102,267/
+    https://www.vulnhub.com/entry/typhoon-102,267/
 
 [-Kali Linux-]操作系统:
-	https://www.kali.org/get-kali/
+    https://www.kali.org/get-kali/
 
 [-Windows-]虚拟机软件:
-	VMware Workstation Pro
-	VirtualBox
+    VMware Workstation Pro
+    VirtualBox
 
 以上准备请自行完成, 本文不做介绍
 
@@ -533,9 +533,9 @@ kali@kali[~]$ sudo umount -t nfs 192.168.220.132:/typhoon
 CVE-2017-7494 漏洞介绍: https://nvd.nist.gov/vuln/detail/CVE-2017-7494
 
 漏洞利用条件:
-	服务器打开了文件/打印机共享端口445 (139)
-	共享文件拥有访问以及写入权限
-	攻击者知道共享的目录路径
+    服务器打开了文件/打印机共享端口445 (139)
+    共享文件拥有访问以及写入权限
+    攻击者知道共享的目录路径
 
 仍然使用 MSF 寻找并利用漏洞
 kali@kali[~]$ sudo msfdb run
