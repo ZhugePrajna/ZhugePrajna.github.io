@@ -33,5 +33,4 @@ get-appxpackage Microsoft.GetHelp -allusers | remove-appxpackage
 
 get-appxpackage Microsoft.HEVCVideoExtension -allusers | remove-appxpackage
 
-十二个我用不着的东西,
-拜拜了您嘞!
+get-appxpackage MicrosoftWindows.Client.CBS -allusers | remove-appxpackage
