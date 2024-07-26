@@ -86,20 +86,26 @@ Sqlmap: https://sqlmap.org/
 Wireshark: https://www.wireshark.org/
 Burp Suite: https://portswigger.net/
 
+Metasploit: https://www.metasploit.com/
+Hashcat: https://hashcat.net/hashcat/
+
 IDA: https://hex-rays.com/
 Ghidra: https://github.com/NationalSecurityAgency/ghidra
 OllyDbg: https://www.ollydbg.de/
-WinHex: https://x-ways.net/winhex/
 Frida: https://frida.re/
+
+Aircrack-ng: https://www.aircrack-ng.org/
 
 GnuPG: https://gnupg.org/
 Gpg4win: https://www.gpg4win.org/
 VeraCrypt: https://veracrypt.fr/en/Home.html
 
-Metasploit: https://www.metasploit.com/
-Hashcat: https://hashcat.net/hashcat/
-
-Aircrack-ng: https://www.aircrack-ng.org/
+wxHexEditor: https://www.wxhexeditor.org/
+MH-Nexus: https://mh-nexus.de/en/hxd/
+WinHex: https://x-ways.net/winhex/
+HexFiend: https://hexfiend.com/
+ExifTool: https://exiftool.org/
+OpenStego: https://www.openstego.com/
 
 [Other]
 Lenovo Legion Toolkit: https://github.com/BartoszCichecki/LenovoLegionToolkit
