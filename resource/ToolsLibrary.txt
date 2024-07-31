@@ -1,8 +1,12 @@
 #Tools Library#
 #We need a more creative open source era#
 
-[Browser Plugins & Portable Tools]
+[Browser Plugins]
 uBlock Origin: https://ublockorigin.com/
+Tampermonkey: https://www.tampermonkey.net/
+Firefox Profiler⁩: https://profiler.firefox.com/
+
+[Portable Tools]
 7-zip: https://www.7-zip.org/
 Rufus: https://rufus.ie/zh/
 
@@ -93,6 +97,7 @@ IDA: https://hex-rays.com/
 Ghidra: https://github.com/NationalSecurityAgency/ghidra
 OllyDbg: https://www.ollydbg.de/
 Frida: https://frida.re/
+WinDbg: https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/
 
 Aircrack-ng: https://www.aircrack-ng.org/
 
@@ -107,7 +112,7 @@ HexFiend: https://hexfiend.com/
 ExifTool: https://exiftool.org/
 OpenStego: https://www.openstego.com/
 
-[Other]
+[OtherTools]
 Lenovo Legion Toolkit: https://github.com/BartoszCichecki/LenovoLegionToolkit
 GitHub Desktop: https://github.com/apps/desktop
 Steam: https://store.steampowered.com/
