@@ -15,11 +15,21 @@ CPU-Z: https://www.cpuid.com/softwares/cpu-z.html
 TechPowerUp GPU-Z: https://www.techpowerup.com/gpuz/
 CrystalDiskInfo: https://crystalmark.info/en/software/crystaldiskinfo/
 
+[Hardware Driver]
+Nvidia: https://www.nvidia.com/download/index.aspx
+AMD: https://www.amd.com/en/support/download/drivers.html
+Intel: https://www.intel.com/content/www/us/en/download-center/home.html
+
 [BitTorrent Software]
 Free Download Manager: https://www.freedownloadmanager.org/
 qBittorrent: https://sourceforge.net/projects/qbittorrent/
 qBittorrent Enhanced Edition: https://github.com/c0re100/qBittorrent-Enhanced-Edition
 Transmission: https://transmissionbt.com/
+
+[PDF Reader]
+Sumatra PDF: https://www.sumatrapdfreader.org/free-pdf-reader
+Okular: https://okular.kde.org/
+MuPDF: https://mupdf.com/
 
 [Text Editing Tools]
 Visual Studio Code: https://code.visualstudio.com/
@@ -41,9 +51,6 @@ More Free Tools Website: https://tjfree.com/
 MPV: https://mpv.io/
 VLC media player: https://www.videolan.org/
 ImageGlass: https://imageglass.org/
-
-[Hardware Driver]
-Nvidia: https://www.nvidia.com/download/index.aspx
 
 [Virtual Machine Software]
 VMware Workstation Pro: https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro
