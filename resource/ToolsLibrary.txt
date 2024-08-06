@@ -1,5 +1,8 @@
-#Tools Library#
-#We need a more creative open source era#
++----------------------------------------------------------+
+| Main Title: Tools Library                                |
+| Doc Updates: We need a more creative open source era     |
+| More: <+> means "Not Recommended"                        |
++----------------------------------------------------------+
 
 [Browser Plugins]
 uBlock Origin: https://ublockorigin.com/
@@ -36,7 +39,7 @@ Visual Studio Code: https://code.visualstudio.com/
 Notepad3: https://github.com/rizonesoft/Notepad3
 Visual Studio 2022: https://visualstudio.microsoft.com/zh-hans/free-developer-offers/
 Eclipse: https://www.eclipse.org/downloads/packages/
-Geany[<- Not recommended]: https://www.geany.org/
+<+>Geany: https://www.geany.org/
 
 [Video editing, image editing, recording and other media tools]
 Inkscape: https://inkscape.org/
@@ -54,15 +57,15 @@ ImageGlass: https://imageglass.org/
 
 [Virtual Machine Software]
 VMware Workstation Pro: https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro
-VirtualBox[<- Not recommended]: https://www.virtualbox.org/
+<+>VirtualBox: https://www.virtualbox.org/
 QEMU: https://www.qemu.org/
 UTM: https://mac.getutm.app/
 
 [Operating System]
 ITellYou: https://msdn.itellyou.cn/
 
-Debian[<- Not recommended]: https://www.debian.org/
-Ubuntu[<- Not recommended]: https://ubuntu.com/
+<+>Debian: https://www.debian.org/
+<+>Ubuntu: https://ubuntu.com/
 
 Qubes OS: https://www.qubes-os.org/
 OpenBSD: https://www.openbsd.org/
@@ -83,7 +86,7 @@ PHP:
         https://sourceforge.net/projects/wampserver/
 
 [Database & Management Tools]
-MySQL: https://dev.mysql.com/downloads/
+<+>MySQL: https://dev.mysql.com/downloads/
 MariaDB: https://mariadb.org/
 PostgreSQL: https://www.postgresql.org/
 SQLite: https://sqlite.org/
