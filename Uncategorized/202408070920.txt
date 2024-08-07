@@ -1,0 +1,19 @@
+标题: 烦人的 < ms-gamingoverlay > 弹窗提示
+
+创建: 2024-08-07 09:20
+更新: 
+链接: 
+
+这篇文章也没什么技术水平, 但也算一个小技巧吧
+
+" win + r " and INPUT: "regedit"
+
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\GameDVR
+
+    Find "AppCaptureEnabled"
+    Change "1" to "0"
+
+HKEY_CURRENT_USER\System\GameConfigStore
+
+    Find "GameDVR_Enabled"
+    Change "1" to "0"

@@ -44,8 +44,8 @@ SAR: 1
 BREACH: 1
     https://www.vulnhub.com/entry/breach-1,152/
 
-DIGITALWORLD.LOCAL: BRAVERY
-    https://www.vulnhub.com/entry/digitalworldlocal-bravery,281/
+PwnLab: init
+    https://www.vulnhub.com/entry/pwnlab-init,158/
 
 DERPNSTINK: 1
     https://www.vulnhub.com/entry/derpnstink-1,221/
