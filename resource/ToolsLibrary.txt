@@ -106,6 +106,7 @@ Hashcat: https://hashcat.net/hashcat/
 IDA: https://hex-rays.com/
 Ghidra: https://github.com/NationalSecurityAgency/ghidra
 OllyDbg: https://www.ollydbg.de/
+x64dbg: https://x64dbg.com/
 Frida: https://frida.re/
 WinDbg: https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/
 
@@ -115,6 +116,7 @@ GnuPG: https://gnupg.org/
 Gpg4win: https://www.gpg4win.org/
 VeraCrypt: https://veracrypt.fr/en/Home.html
 
+Cheat Engine: https://www.cheatengine.org/
 wxHexEditor: https://www.wxhexeditor.org/
 MH-Nexus: https://mh-nexus.de/en/hxd/
 WinHex: https://x-ways.net/winhex/
