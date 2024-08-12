@@ -7,7 +7,7 @@
 [Browser Plugins]
 uBlock Origin: https://ublockorigin.com/
 Tampermonkey: https://www.tampermonkey.net/
-Firefox Profiler⁩: https://profiler.firefox.com/
+Firefox Profiler: https://profiler.firefox.com/
 FoxyProxy: https://github.com/foxyproxy/browser-extension
 UserAgent-Switcher: https://github.com/ray-lothian/UserAgent-Switcher/
 
