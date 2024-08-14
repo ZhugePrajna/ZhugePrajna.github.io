@@ -126,7 +126,12 @@ HexFiend: https://hexfiend.com/
 ExifTool: https://exiftool.org/
 OpenStego: https://www.openstego.com/
 
-[OtherTools]
+[Minecraft Tools]
+Prism Launcher: https://prismlauncher.org/
+Fabric Loader: https://fabricmc.net/
+Modrinth: https://modrinth.com/
+
+[Other Tools]
 Lenovo Legion Toolkit: https://github.com/BartoszCichecki/LenovoLegionToolkit
 GitHub Desktop: https://github.com/apps/desktop
 Steam: https://store.steampowered.com/
