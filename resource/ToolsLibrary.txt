@@ -21,7 +21,7 @@ TechPowerUp GPU-Z: https://www.techpowerup.com/gpuz/
 CrystalDiskInfo: https://crystalmark.info/en/software/crystaldiskinfo/
 
 [Hardware Driver]
-Nvidia: https://www.nvidia.com/download/index.aspx
+Nvidia: https://www.nvidia.com/en-us/drivers/
 AMD: https://www.amd.com/en/support/download/drivers.html
 Intel: https://www.intel.com/content/www/us/en/download-center/home.html
 
