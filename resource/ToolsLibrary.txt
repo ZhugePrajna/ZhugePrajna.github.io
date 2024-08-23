@@ -117,6 +117,7 @@ Aircrack-ng: https://www.aircrack-ng.org/
 GnuPG: https://gnupg.org/
 Gpg4win: https://www.gpg4win.org/
 VeraCrypt: https://veracrypt.fr/en/Home.html
+Cryptomator: https://github.com/cryptomator/cryptomator
 
 Cheat Engine: https://www.cheatengine.org/
 wxHexEditor: https://www.wxhexeditor.org/

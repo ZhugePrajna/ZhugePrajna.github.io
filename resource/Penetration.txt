@@ -3,6 +3,7 @@
 | Doc Updates: Knowledge will be the ultimate weapon       |
 | Editing time: 08/20/2024                                 |
 +----------------------------------------------------------+
+
 =====<Fundamental Learning>=====
 LingoHut:
     https://www.lingohut.com/en
@@ -16,11 +17,16 @@ TK's Advices:
 Knownsec R&D Skills Table:
     https://blog.knownsec.com/Knownsec_RD_Checklist/
 
+SQL Murder Mystery:
+    https://mystery.knightlab.com/
+
 Internet Search Tips:
     https://gwern.net/search
 
-SQL Murder Mystery:
-    https://mystery.knightlab.com/
+How Computers Use Numbers:
+    https://mabi.land/numbers/
+
+
 
 =====<Study Boundaries>=====
 SEED Labs:
@@ -50,6 +56,8 @@ Reverse Engineering For Everyone:
 Putting the "You" in CPU:
     https://cpu.land/
 
+
+
 =====<Penetration Education Platforms>=====
 VulnHub:
     https://www.vulnhub.com/
@@ -66,6 +74,9 @@ pwn.college:
 ROP Emporium:
     https://ropemporium.com/
 
+
+
+
 =====<Breaking Windows>=====
 Microsoft Free Lessons:
     https://learn.microsoft.com/
@@ -81,6 +92,9 @@ Windows Privilege Escalation Fundamentals:
 
 Elevating privileges by exploiting weak folder permissions:
     https://www.greyhathacker.net/?p=738
+
+
+
 
 =====<Kill The Linux>=====
 Linux Journey:
