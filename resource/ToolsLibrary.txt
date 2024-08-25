@@ -7,6 +7,7 @@
 [Browser Plugins]
 uBlock Origin: https://ublockorigin.com/
 Tampermonkey: https://www.tampermonkey.net/
+Stylus: https://github.com/openstyles/stylus
 Firefox Profiler: https://profiler.firefox.com/
 FoxyProxy: https://github.com/foxyproxy/browser-extension
 UserAgent-Switcher: https://github.com/ray-lothian/UserAgent-Switcher/
@@ -127,13 +128,20 @@ HexFiend: https://hexfiend.com/
 ExifTool: https://exiftool.org/
 OpenStego: https://www.openstego.com/
 
+[2FA Tools]
+2FAS: https://2fas.com/
+AuthenticatorPro: https://github.com/jamie-mh/AuthenticatorPro
+Aegis Authenticator: https://github.com/beemdevelopment/aegis
+
 [Minecraft Tools]
 Prism Launcher: https://prismlauncher.org/
 Fabric Loader: https://fabricmc.net/
 Modrinth: https://modrinth.com/
+MCA Selector: https://github.com/Querz/mcaselector
 
 [Other Tools]
 Lenovo Legion Toolkit: https://github.com/BartoszCichecki/LenovoLegionToolkit
+VisualVM: https://github.com/oracle/visualvm
 GitHub Desktop: https://github.com/apps/desktop
 Steam: https://store.steampowered.com/
 Epic: https://store.epicgames.com/en-US/
