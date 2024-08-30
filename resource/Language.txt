@@ -12,23 +12,17 @@ you need to read this article:
     http://www.catb.org/~esr/faqs/smart-questions.html
     https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way
 
-Please don't mind me having you do this.
-Everything happens for a reason.
-
-If it weren't for some idiots,
-I probably wouldn't be writing this article.
-
 
 
 =====<Content>=====
-+--------------------------+
-|  ____  _   _ ____ _____  |
-| |  _ \| | | / ___|_   _| |
-| | |_) | | | \___ \ | |   |
-| |  _ <| |_| |___) || |   |
-| |_| \_\\___/|____/ |_|   |
-|                          |
-+--------------------------+
++-----------------------+
+|  ____            _    |
+| |  _ \ _   _ ___| |_  |
+| | |_) | | | / __| __| |
+| |  _ <| |_| \__ \ |_  |
+| |_| \_\\__,_|___/\__| |
+|                       |
++-----------------------+
 =====Basic Guide=====
 [Official Publication]
     https://www.rust-lang.org/learn
@@ -88,14 +82,13 @@ I probably wouldn't be writing this article.
     https://go.dev/learn/
 
 
-+--------------------------------+
-| __        ___    ____  __  __  |
-| \ \      / / \  / ___||  \/  | |
-|  \ \ /\ / / _ \ \___ \| |\/| | |
-|   \ V  V / ___ \ ___) | |  | | |
-|    \_/\_/_/   \_\____/|_|  |_| |
-|                                |
-+--------------------------------+
++-------------------------------+
+| __      ____ _ ___ _ __ ___   |
+| \ \ /\ / / _` / __| '_ ` _ \  |
+|  \ V  V / (_| \__ \ | | | | | |
+|   \_/\_/ \__,_|___/_| |_| |_| |
+|                               |
++-------------------------------+
 =====Basic Guide=====
 [Official Publication]
     https://webassembly.org/
