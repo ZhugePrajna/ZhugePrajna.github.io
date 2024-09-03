@@ -50,6 +50,10 @@ you need to read this article:
 [The ultimate guide to Rust newtypes]
     https://www.howtocodeit.com/articles/ultimate-guide-rust-newtypes
 
+=====Other Guide=====
+[The Rust eBookshelf]
+    https://dieterplex.github.io/rust-ebookshelf/rust.html
+
 
 +-------------------------------------+
 |  ____        _   _                  |

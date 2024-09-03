@@ -14,8 +14,12 @@ Csdiy:
 TK's Advices:
     https://www.tombkeeper.io/weibo/Idpdy9wfZ
 
-Knownsec R&D Skills Table:
-    https://blog.knownsec.com/Knownsec_RD_Checklist/
+Knownsec RD Checklist:
+    [V3.1] https://blog.knownsec.com/Knownsec_RD_Checklist/
+    [V4.0] https://paper.seebug.org/papers/RD_Checklist/index.html
+
+WgpSec Wiki:
+    https://wiki.wgpsec.org/knowledge/
 
 SQL Murder Mystery:
     https://mystery.knightlab.com/
@@ -83,6 +87,12 @@ Microsoft Free Lessons:
 
 Forsenergy:
     https://forsenergy.com/
+
+Windows API Function Cheatsheets:
+    https://github.com/7etsuo/windows-api-function-cheatsheets
+
+Awesome Advanced Windows Exploitation References:
+    https://github.com/exp-sky/Awesome-Advanced-Windows-Exploitation-References
 
 HijackLibs:
     https://hijacklibs.net/
