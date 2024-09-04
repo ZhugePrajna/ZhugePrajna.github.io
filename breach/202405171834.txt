@@ -20,15 +20,15 @@ Rust的门槛极高, 不像Python, 或者Golang那样简单。
 Rust国内岗位需求可以说, 基本上没有, 就算有也轮不到Rust菜鸟:)
 至于Rust怎么学, 这里便是最好的方法:
 
-=====官方书籍=====
-https://www.rust-lang.org/learn
-https://www.rust-lang.org/tools
+=====Basic Guide=====
+[Official Publication]
+    https://www.rust-lang.org/learn
+    https://www.rust-lang.org/tools
 
-=====谷歌书籍=====
-[Comprehensive Rust]
+["Google" Comprehensive Rust]
     https://google.github.io/comprehensive-rust/
 
-=====进阶书籍=====
+=====Advanced Guide=====
 [Effective Rust]
     https://www.lurklurk.org/effective-rust/
 
@@ -43,3 +43,10 @@ https://www.rust-lang.org/tools
 
 [Command Line Applications in Rust]
     https://rust-cli.github.io/book/index.html
+
+[The ultimate guide to Rust newtypes]
+    https://www.howtocodeit.com/articles/ultimate-guide-rust-newtypes
+
+=====Uncategorized Guide=====
+[The Rust eBookshelf]
+    https://dieterplex.github.io/rust-ebookshelf/rust.html

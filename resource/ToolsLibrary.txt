@@ -16,7 +16,7 @@ UserAgent-Switcher: https://github.com/ray-lothian/UserAgent-Switcher/
 7-zip: https://www.7-zip.org/
 Rufus: https://rufus.ie/zh/
 
-[Hardware Diagnostic Tools]
+[Hardware Diagnostic]
 CPU-Z: https://www.cpuid.com/softwares/cpu-z.html
 TechPowerUp GPU-Z: https://www.techpowerup.com/gpuz/
 CrystalDiskInfo: https://crystalmark.info/en/software/crystaldiskinfo/
@@ -26,7 +26,7 @@ Nvidia: https://www.nvidia.com/en-us/drivers/
 AMD: https://www.amd.com/en/support/download/drivers.html
 Intel: https://www.intel.com/content/www/us/en/download-center/home.html
 
-[BitTorrent Software]
+[BitTorrent]
 Free Download Manager: https://www.freedownloadmanager.org/
 qBittorrent: https://sourceforge.net/projects/qbittorrent/
 qBittorrent Enhanced Edition: https://github.com/c0re100/qBittorrent-Enhanced-Edition
@@ -37,14 +37,14 @@ Sumatra PDF: https://www.sumatrapdfreader.org/free-pdf-reader
 Okular: https://okular.kde.org/
 MuPDF: https://mupdf.com/
 
-[Text Editing Tools]
+[Text Editor]
 Visual Studio Code: https://code.visualstudio.com/
 Notepad3: https://github.com/rizonesoft/Notepad3
 Visual Studio 2022: https://visualstudio.microsoft.com/zh-hans/free-developer-offers/
 Eclipse: https://www.eclipse.org/downloads/packages/
 <+>Geany: https://www.geany.org/
 
-[Video editing, image editing, recording and other media tools]
+[Video editing, image editing, recording]
 Inkscape: https://inkscape.org/
 OBS Studio: https://obsproject.com/
 Audacity: https://www.audacityteam.org/
@@ -53,12 +53,12 @@ Shotcut: https://www.shotcut.org/
 Blender: https://www.blender.org/
 More Free Tools Website: https://tjfree.com/
 
-[Video & Image Viewing Tools]
+[Video, Image Viewing]
 MPV: https://mpv.io/
 VLC media player: https://www.videolan.org/
 ImageGlass: https://imageglass.org/
 
-[Virtual Machine Software]
+[Virtual Machine]
 VMware Workstation Pro: https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro
 <+>VirtualBox: https://www.virtualbox.org/
 QEMU: https://www.qemu.org/
@@ -88,7 +88,7 @@ PHP:
         https://wampserver.aviatechno.net/
         https://sourceforge.net/projects/wampserver/
 
-[Database & Management Tools]
+[Database & Management]
 <+>MySQL: https://dev.mysql.com/downloads/
 MariaDB: https://mariadb.org/
 PostgreSQL: https://www.postgresql.org/
@@ -97,7 +97,7 @@ phpMyAdmin: https://www.phpmyadmin.net/
 Adminer: https://www.adminer.org/
 HeidiSQL: https://www.heidisql.com/
 
-[Cyber Security Tools]
+[Cyber Security]
 Nmap: https://nmap.org/
 Sqlmap: https://sqlmap.org/
 Wireshark: https://www.wireshark.org/
@@ -128,18 +128,18 @@ HexFiend: https://hexfiend.com/
 ExifTool: https://exiftool.org/
 OpenStego: https://www.openstego.com/
 
-[2FA Tools]
+[2FA]
 2FAS: https://2fas.com/
 AuthenticatorPro: https://github.com/jamie-mh/AuthenticatorPro
 Aegis Authenticator: https://github.com/beemdevelopment/aegis
 
-[Minecraft Tools]
+[Minecraft]
 Prism Launcher: https://prismlauncher.org/
 Fabric Loader: https://fabricmc.net/
 Modrinth: https://modrinth.com/
 MCA Selector: https://github.com/Querz/mcaselector
 
-[Other Tools]
+[Uncategorized]
 Lenovo Legion Toolkit: https://github.com/BartoszCichecki/LenovoLegionToolkit
 VisualVM: https://github.com/oracle/visualvm
 GitHub Desktop: https://github.com/apps/desktop
@@ -159,4 +159,4 @@ v2rayN: https://github.com/2dust/v2rayN
 v2rayNG: https://github.com/2dust/v2rayNG
 
 [ETC]
-Ciallo～(∠·ω< )⌒★
+Ciallo~(∠·ω< )⌒★

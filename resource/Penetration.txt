@@ -30,8 +30,6 @@ Internet Search Tips:
 How Computers Use Numbers:
     https://mabi.land/numbers/
 
-
-
 =====<Study Boundaries>=====
 SEED Labs:
     https://seedsecuritylabs.org/
@@ -60,8 +58,6 @@ Reverse Engineering For Everyone:
 Putting the "You" in CPU:
     https://cpu.land/
 
-
-
 =====<Penetration Education Platforms>=====
 VulnHub:
     https://www.vulnhub.com/
@@ -77,9 +73,6 @@ pwn.college:
 
 ROP Emporium:
     https://ropemporium.com/
-
-
-
 
 =====<Breaking Windows>=====
 Microsoft Free Lessons:
@@ -102,9 +95,6 @@ Windows Privilege Escalation Fundamentals:
 
 Elevating privileges by exploiting weak folder permissions:
     https://www.greyhathacker.net/?p=738
-
-
-
 
 =====<Kill The Linux>=====
 Linux Journey:

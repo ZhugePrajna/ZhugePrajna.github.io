@@ -12,8 +12,6 @@ you need to read this article:
     http://www.catb.org/~esr/faqs/smart-questions.html
     https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way
 
-
-
 =====<Content>=====
 +-----------------------+
 |  ____            _    |
@@ -50,10 +48,9 @@ you need to read this article:
 [The ultimate guide to Rust newtypes]
     https://www.howtocodeit.com/articles/ultimate-guide-rust-newtypes
 
-=====Other Guide=====
+=====Uncategorized Guide=====
 [The Rust eBookshelf]
     https://dieterplex.github.io/rust-ebookshelf/rust.html
-
 
 +-------------------------------------+
 |  ____        _   _                  |
@@ -71,7 +68,6 @@ you need to read this article:
 [Think Python, 3rd edition]
     https://allendowney.github.io/ThinkPython/index.html
 
-
 +-----------------------------------+
 |   ____       _                    |
 |  / ___| ___ | | __ _ _ __   __ _  |
@@ -84,7 +80,6 @@ you need to read this article:
 =====Basic Guide=====
 [Official Publication]
     https://go.dev/learn/
-
 
 +-------------------------------+
 | __      ____ _ ___ _ __ ___   |
@@ -100,8 +95,6 @@ you need to read this article:
 =====Advanced Guide=====
 [SCZ's Blog]
     https://scz.617.cn/web/202407151413.txt
-
-
 
 =====<End>=====
 Every effort is worth it.

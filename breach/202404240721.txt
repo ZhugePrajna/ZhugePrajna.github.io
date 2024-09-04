@@ -4,8 +4,7 @@
 # FixDate: 2024/04/30
 # =================================================
 
-前言：
-
+前言:
     Termux是一款运行于Android系统的开源终端模拟器
     现如今由于缺少维护Termux的人员, 版本似乎停留在:
     【v0.118.0】
@@ -91,7 +90,6 @@ Termux使用指北:
         Oh-My-ZSH安装配置:
             sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
             【项目地址】https://github.com/ohmyzsh/ohmyzsh
-            【注意】我们不推荐使用ohmytermux, 详细请自行体验
 [*************************************]
 
     Root身份设置:
