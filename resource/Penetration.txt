@@ -4,7 +4,9 @@
 | Editing time: 08/20/2024                                 |
 +----------------------------------------------------------+
 
-=====<Fundamental Learning>=====
+====================================
+[Fundamental Learning]
+
 LingoHut:
     https://www.lingohut.com/en
 
@@ -30,7 +32,9 @@ Internet Search Tips:
 How Computers Use Numbers:
     https://mabi.land/numbers/
 
-=====<Study Boundaries>=====
+====================================
+[Study Boundaries]
+
 SEED Labs:
     https://seedsecuritylabs.org/
 
@@ -58,7 +62,9 @@ Reverse Engineering For Everyone:
 Putting the "You" in CPU:
     https://cpu.land/
 
-=====<Penetration Education Platforms>=====
+====================================
+[Penetration Education Platforms]
+
 VulnHub:
     https://www.vulnhub.com/
 
@@ -74,7 +80,9 @@ pwn.college:
 ROP Emporium:
     https://ropemporium.com/
 
-=====<Breaking Windows>=====
+====================================
+[Breaking Windows]
+
 Microsoft Free Lessons:
     https://learn.microsoft.com/
 
@@ -96,7 +104,9 @@ Windows Privilege Escalation Fundamentals:
 Elevating privileges by exploiting weak folder permissions:
     https://www.greyhathacker.net/?p=738
 
-=====<Kill The Linux>=====
+====================================
+[Kill The Linux]
+
 Linux Journey:
     https://linuxjourney.com/
 
