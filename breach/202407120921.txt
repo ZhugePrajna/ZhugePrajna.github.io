@@ -106,6 +106,9 @@ DavidVarghese's blog:
 Thomas Laurenson's blog:
     https://trophyroom.thomaslaurenson.com/
 
+0xdf's blog:
+    https://0xdf.gitlab.io/
+
 ====================================
 [更多虚拟机推荐]
 NetSecFocus Trophy Room:
