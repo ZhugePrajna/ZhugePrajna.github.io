@@ -27,7 +27,6 @@ FreeCommander: https://freecommander.com/en/summary/
 AdGuard: https://adguard.com/
 Listary: https://www.listary.com/
 Total Commander: https://www.ghisler.com/
-IDM: https://internetdownloadmanager.com/
 
 [Hardware Diagnostic]
 CPU-Z: https://www.cpuid.com/softwares/cpu-z.html
