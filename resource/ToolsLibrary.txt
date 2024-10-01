@@ -16,16 +16,18 @@ FoxyProxy: https://github.com/foxyproxy/browser-extension
 UserAgent-Switcher: https://github.com/ray-lothian/UserAgent-Switcher/
 
 [Portable Tools]
-7-zip: https://www.7-zip.org/
 Rufus: https://rufus.ie/zh/
-<?>AdGuard: https://adguard.com/
-
-[File Manager]
+7-zip: https://www.7-zip.org/
+Everything: http://www.voidtools.com/
 Explorer++: https://explorerplusplus.com/
 Multi Commander: https://multicommander.com/
 FreeCommander: https://freecommander.com/en/summary/
-<$>Total Commander: https://www.ghisler.com/
-<?>XYplorer: https://www.xyplorer.com/
+
+[Portable Tools(Pay)]
+AdGuard: https://adguard.com/
+Listary: https://www.listary.com/
+Total Commander: https://www.ghisler.com/
+IDM: https://internetdownloadmanager.com/
 
 [Hardware Diagnostic]
 CPU-Z: https://www.cpuid.com/softwares/cpu-z.html
