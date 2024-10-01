@@ -9,7 +9,6 @@
 
 [Browser Plugins]
 uBlock Origin: https://ublockorigin.com/
-<?>AdGuard: https://adguard.com/
 Tampermonkey: https://www.tampermonkey.net/
 Stylus: https://github.com/openstyles/stylus
 Firefox Profiler: https://profiler.firefox.com/
@@ -19,13 +18,14 @@ UserAgent-Switcher: https://github.com/ray-lothian/UserAgent-Switcher/
 [Portable Tools]
 7-zip: https://www.7-zip.org/
 Rufus: https://rufus.ie/zh/
+<?>AdGuard: https://adguard.com/
 
-<?>[File Manager]
+[File Manager]
 Explorer++: https://explorerplusplus.com/
 Multi Commander: https://multicommander.com/
 FreeCommander: https://freecommander.com/en/summary/
-Total Commander: https://www.ghisler.com/
-XYplorer: https://www.xyplorer.com/
+<$>Total Commander: https://www.ghisler.com/
+<?>XYplorer: https://www.xyplorer.com/
 
 [Hardware Diagnostic]
 CPU-Z: https://www.cpuid.com/softwares/cpu-z.html
@@ -38,7 +38,6 @@ AMD: https://www.amd.com/en/support/download/drivers.html
 Intel: https://www.intel.com/content/www/us/en/download-center/home.html
 
 [BitTorrent]
-<?>IDM: https://internetdownloadmanager.com/
 Free Download Manager: https://www.freedownloadmanager.org/
 qBittorrent: https://sourceforge.net/projects/qbittorrent/
 qBittorrent Enhanced Edition: https://github.com/c0re100/qBittorrent-Enhanced-Edition
