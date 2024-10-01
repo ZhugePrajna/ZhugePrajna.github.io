@@ -1,11 +1,15 @@
 +----------------------------------------------------------+
 | Main Title: Tools Library                                |
-| Doc Updates: We need a more creative open source era     |
-| More: <+> means "Not Recommended"                        |
+| Doc Updates: We need love and peace...                   |
+| Notice: <-> -> "Not Recommended"                         |
+|         <+> -> "Add Pending"                             |
+|         <?> -> "Experimental Listing"                    |
+|         <$> -> "Paid Product"                            |
 +----------------------------------------------------------+
 
 [Browser Plugins]
 uBlock Origin: https://ublockorigin.com/
+<?>AdGuard: https://adguard.com/
 Tampermonkey: https://www.tampermonkey.net/
 Stylus: https://github.com/openstyles/stylus
 Firefox Profiler: https://profiler.firefox.com/
@@ -15,6 +19,13 @@ UserAgent-Switcher: https://github.com/ray-lothian/UserAgent-Switcher/
 [Portable Tools]
 7-zip: https://www.7-zip.org/
 Rufus: https://rufus.ie/zh/
+
+<?>[File Manager]
+Explorer++: https://explorerplusplus.com/
+Multi Commander: https://multicommander.com/
+FreeCommander: https://freecommander.com/en/summary/
+Total Commander: https://www.ghisler.com/
+XYplorer: https://www.xyplorer.com/
 
 [Hardware Diagnostic]
 CPU-Z: https://www.cpuid.com/softwares/cpu-z.html
@@ -27,6 +38,7 @@ AMD: https://www.amd.com/en/support/download/drivers.html
 Intel: https://www.intel.com/content/www/us/en/download-center/home.html
 
 [BitTorrent]
+<?>IDM: https://internetdownloadmanager.com/
 Free Download Manager: https://www.freedownloadmanager.org/
 qBittorrent: https://sourceforge.net/projects/qbittorrent/
 qBittorrent Enhanced Edition: https://github.com/c0re100/qBittorrent-Enhanced-Edition
@@ -42,7 +54,7 @@ Visual Studio Code: https://code.visualstudio.com/
 Notepad3: https://github.com/rizonesoft/Notepad3
 Visual Studio 2022: https://visualstudio.microsoft.com/zh-hans/free-developer-offers/
 Eclipse: https://www.eclipse.org/downloads/packages/
-<+>Geany: https://www.geany.org/
+<->Geany: https://www.geany.org/
 
 [Video editing, image editing, recording]
 Inkscape: https://inkscape.org/
@@ -60,15 +72,15 @@ ImageGlass: https://imageglass.org/
 
 [Virtual Machine]
 VMware Workstation Pro: https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro
-<+>VirtualBox: https://www.virtualbox.org/
+<->VirtualBox: https://www.virtualbox.org/
 QEMU: https://www.qemu.org/
 UTM: https://mac.getutm.app/
 
 [Operating System]
 ITellYou: https://msdn.itellyou.cn/
 
-<+>Debian: https://www.debian.org/
-<+>Ubuntu: https://ubuntu.com/
+<->Debian: https://www.debian.org/
+<->Ubuntu: https://ubuntu.com/
 
 Qubes OS: https://www.qubes-os.org/
 OpenBSD: https://www.openbsd.org/
@@ -89,7 +101,7 @@ PHP:
         https://sourceforge.net/projects/wampserver/
 
 [Database & Management]
-<+>MySQL: https://dev.mysql.com/downloads/
+<->MySQL: https://dev.mysql.com/downloads/
 MariaDB: https://mariadb.org/
 PostgreSQL: https://www.postgresql.org/
 SQLite: https://sqlite.org/
