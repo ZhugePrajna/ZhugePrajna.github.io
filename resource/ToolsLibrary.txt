@@ -18,6 +18,10 @@ UserAgent-Switcher: https://github.com/ray-lothian/UserAgent-Switcher/
 [Portable Tools]
 Rufus: https://rufus.ie/zh/
 7-zip: https://www.7-zip.org/
+ShareX: https://getsharex.com/
+Geek Uninstaller: https://geekuninstaller.com/
+Fan Control: https://github.com/Rem0o/FanControl.Releases
+FreeFileSync: https://freefilesync.org/
 Everything: http://www.voidtools.com/
 Explorer++: https://explorerplusplus.com/
 Multi Commander: https://multicommander.com/
@@ -50,10 +54,11 @@ Okular: https://okular.kde.org/
 MuPDF: https://mupdf.com/
 
 [Text Editor]
-Visual Studio Code: https://code.visualstudio.com/
+Neovim: https://neovim.io/
 Notepad3: https://github.com/rizonesoft/Notepad3
-Visual Studio 2022: https://visualstudio.microsoft.com/zh-hans/free-developer-offers/
+Visual Studio Code: https://code.visualstudio.com/
 Eclipse: https://www.eclipse.org/downloads/packages/
+Visual Studio 2022: https://visualstudio.microsoft.com/zh-hans/free-developer-offers/
 <->Geany: https://www.geany.org/
 
 [Video editing, image editing, recording]
@@ -67,7 +72,7 @@ More Free Tools Website: https://tjfree.com/
 
 [Video, Image Viewing]
 MPV: https://mpv.io/
-VLC media player: https://www.videolan.org/
+VLC: https://www.videolan.org/
 ImageGlass: https://imageglass.org/
 
 [Virtual Machine]
@@ -79,11 +84,12 @@ UTM: https://mac.getutm.app/
 [Operating System]
 ITellYou: https://msdn.itellyou.cn/
 
-<->Debian: https://www.debian.org/
 <->Ubuntu: https://ubuntu.com/
+<->Debian: https://www.debian.org/
 
-Qubes OS: https://www.qubes-os.org/
 OpenBSD: https://www.openbsd.org/
+Arch Linux: https://archlinux.org/
+Qubes OS: https://www.qubes-os.org/
 
 Kali Linux: https://www.kali.org/
 Parrot OS: https://www.parrotsec.org/
@@ -153,6 +159,7 @@ MCA Selector: https://github.com/Querz/mcaselector
 
 [Uncategorized]
 Lenovo Legion Toolkit: https://github.com/BartoszCichecki/LenovoLegionToolkit
+Hyprland: https://hyprland.org/
 VisualVM: https://github.com/oracle/visualvm
 GitHub Desktop: https://github.com/apps/desktop
 Steam: https://store.steampowered.com/
