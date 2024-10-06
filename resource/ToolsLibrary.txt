@@ -84,8 +84,10 @@ UTM: https://mac.getutm.app/
 [Operating System]
 ITellYou: https://msdn.itellyou.cn/
 
-<->Ubuntu: https://ubuntu.com/
-<->Debian: https://www.debian.org/
+Ubuntu: https://ubuntu.com/
+Linux Mint: https://linuxmint.com/
+openSUSE: https://www.opensuse.org/
+Debian: https://www.debian.org/
 
 OpenBSD: https://www.openbsd.org/
 Arch Linux: https://archlinux.org/
