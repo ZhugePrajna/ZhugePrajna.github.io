@@ -25,6 +25,7 @@ FreeFileSync: https://freefilesync.org/
 Everything: http://www.voidtools.com/
 Explorer++: https://explorerplusplus.com/
 Multi Commander: https://multicommander.com/
+Double Commander: https://doublecmd.sourceforge.io/
 FreeCommander: https://freecommander.com/en/summary/
 
 [Portable Tools(Pay)]
@@ -121,12 +122,10 @@ HeidiSQL: https://www.heidisql.com/
 Nmap: https://nmap.org/
 Sqlmap: https://sqlmap.org/
 Wireshark: https://www.wireshark.org/
-Burp Suite: https://portswigger.net/
 
 Metasploit: https://www.metasploit.com/
 Hashcat: https://hashcat.net/hashcat/
 
-IDA: https://hex-rays.com/
 Ghidra: https://github.com/NationalSecurityAgency/ghidra
 OllyDbg: https://www.ollydbg.de/
 x64dbg: https://x64dbg.com/
@@ -143,10 +142,14 @@ Cryptomator: https://github.com/cryptomator/cryptomator
 Cheat Engine: https://www.cheatengine.org/
 wxHexEditor: https://www.wxhexeditor.org/
 MH-Nexus: https://mh-nexus.de/en/hxd/
-WinHex: https://x-ways.net/winhex/
 HexFiend: https://hexfiend.com/
 ExifTool: https://exiftool.org/
 OpenStego: https://www.openstego.com/
+
+[Cyber Security(Pay)]
+Burp Suite: https://portswigger.net/
+IDA: https://hex-rays.com/
+WinHex: https://x-ways.net/winhex/
 
 [2FA]
 2FAS: https://2fas.com/
