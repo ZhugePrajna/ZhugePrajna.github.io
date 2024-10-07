@@ -15,11 +15,15 @@ Firefox Profiler: https://profiler.firefox.com/
 FoxyProxy: https://github.com/foxyproxy/browser-extension
 UserAgent-Switcher: https://github.com/ray-lothian/UserAgent-Switcher/
 
+[Uninstall]
+Geek Uninstaller: https://geekuninstaller.com/
+HiBit Uninstaller: https://www.hibitsoft.ir/Uninstaller.html
+<$>Revo Uninstaller: https://www.revouninstaller.com/
+
 [Portable Tools]
 Rufus: https://rufus.ie/zh/
 7-zip: https://www.7-zip.org/
 ShareX: https://getsharex.com/
-Geek Uninstaller: https://geekuninstaller.com/
 Fan Control: https://github.com/Rem0o/FanControl.Releases
 FreeFileSync: https://freefilesync.org/
 Everything: http://www.voidtools.com/
