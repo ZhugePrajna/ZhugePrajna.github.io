@@ -9,11 +9,9 @@
 
 ============================================
 GnuPG:
-
     https://gnupg.org/
 
-Gpg4win [GnuPG 的 Windows 版本]:
-
+Gpg4win[GnuPG的Windows版本]:
     https://www.gpg4win.org/
 
 ============================================
@@ -22,6 +20,7 @@ Gpg4win [GnuPG 的 Windows 版本]:
 
     https://emailselfdefense.fsf.org/en/
 
+============================================
 Arguing that you don't care about the right to privacy
 because you have nothing to hide is no different from saying
 you don't care about free speech because you have nothing to say.

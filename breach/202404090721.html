@@ -27,6 +27,19 @@
                         </nav>
                         <nav class="main">
                             <ul>
+                                <li class="search">
+                                    <a class="fa-search" href="#search">Search</a>
+                                    <form id="search" method="get" action="https://www.google.com/search">
+                                        <input type="text" name="query" value="" placeholder="Google" />
+                                        <input type="hidden" name="pws" value="0" />
+                                        <input type="hidden" name="ie" value="UTF-8" />
+                                        <input type="hidden" name="oe" value="en" />
+                                        <input type="hidden" name="num" value="10" />
+                                        <input type="hidden" name="hl" value="en" />
+                                        <input type="hidden" name="domains" value="zhugeprajna.github.io" />
+                                        <input type="hidden" name="sitesearch" value="zhugeprajna.github.io" />
+                                    </form>
+                                </li>
                                 <li class="menu">
                                     <a class="fa-bars" href="#menu">Menu</a>
                                 </li>
@@ -37,13 +50,60 @@
                 <!-- Menu -->
                     <section id="menu">
 
+                        <!-- Search -->
+                            <section>
+                                <form class="search" method="get" action="https://duckduckgo.com/">
+                                    <input type="text" name="q" value="" placeholder="DuckDuckGo" />
+                                    <input type="hidden" name="kp" value="1" />
+                                    <input type="hidden" name="k1" value="-1" />
+                                </form>
+                            </section>
+
                         <!-- Links -->
-                            <section><ul class="links"><li><a href="../dpon/index.html"><h3>深海记事</h3><p>Who Am I?</p><p>I Am You...</p></a></li></ul></section>
-                            <section><ul class="links"><li><a href="../block-story/index.html"><h3>昔来往事</h3><p>What was done to me created me.</p></a></li></ul></section>
-                            <section><ul class="links"><li><a href="../Uncategorized/index.html"><h3>未定义记事录</h3><p>It's a basic principle of the Universe that every action will create an</p><p>equal and opposing reaction.</p></a></li></ul></section>
-                            <section><ul class="links"><li><a href="../breach/index.html"><h3>突破信息</h3><p>I attribute my success to this: </p><p>I never gave or took any excuse.</p></a></li></ul></section>
-                            <section><ul class="links"><li><a href="../resource/index.html"><h3>Resource</h3><p>Read A Fucking Book.</p></a></li></ul></section>
-                            <section><ul class="links"><li><a href="../zhouenlai/index.html"><h3>周恩来</h3><p>为了忘却的纪念</p><p>为了和平而祈愿</p></a></li></ul></section>
+                            <section>
+                                <ul class="links">
+                                    <li>
+                                        <a href="../dpon/index.html">
+                                            <h3>深海记事</h3>
+                                            <p>Who Am I?</p>
+                                            <p>I Am You...</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../block-story/index.html">
+                                            <h3>昔来往事</h3>
+                                            <p>What was done to me created me.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../Uncategorized/index.html">
+                                            <h3>未定义记事录</h3>
+                                            <p>It's a basic principle of the Universe that every action will create an</p>
+                                            <p>equal and opposing reaction.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../breach/index.html">
+                                            <h3>突破信息</h3>
+                                            <p>I attribute my success to this: </p>
+                                            <p>I never gave or took any excuse.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../resource/index.html">
+                                            <h3>Resource</h3>
+                                            <p>Read A Fucking Book.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../zhouenlai/index.html">
+                                            <h3>周恩来</h3>
+                                            <p>为了忘却的纪念</p>
+                                            <p>为了和平而祈愿</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
 
                     </section>
 
@@ -63,11 +123,11 @@
                                     </div>
                                 </header>
                                 <span class="image featured"></span>
-                                <p>1、TestDisk，一款功能强大的数据恢复软件，开源免费。主要用于帮助恢复丢失的分区，或使无法启动的磁盘重新启动。（www.cgsecurity.org/wiki/TestDisk）</p>
-                                <p>2、Recuva，一款轻松快速地文件恢复工具。不管是误删文件，还是计算机崩溃文件丢失，它都可以帮助你恢复文件！该工具支持恢复丢失的图片、音乐、文档、视频、电子邮件或任何其他文件类型。（www.ccleaner.com/zh-cn/recuva）</p>
-                                <p>3、CuteRecovery，一个安全的数据恢复软件，可轻松快速地恢复丢失的数据。具有高恢复率，无风险等特点。支持在台式机和笔记本电脑、硬盘、存储卡、U盘、数码相机等设备中恢复数据。（www.eassos.com）</p>
-                                <p>4、Stellar Data Recovery，支持在任何数据丢失情况下轻松恢复丢失或删除的Windows数据，无论是无意还是故意删除。（www.stellarinfo.com）</p>
-                                <p>5、Windows File Recovery，该程序是使用winfr命令运行的。它具有专为NTFS文件系统设计的模式，该模式将尝试从损坏或已格式化的磁盘中恢复文件。另一种模式将尝试从FAT和exFAT（主要在外部设备上找到）和ReFS文件系统恢复特定文件类型。</p>
+                                <p>1、TestDisk, 一款功能强大的数据恢复软件, 开源免费。主要用于帮助恢复丢失的分区, 或使无法启动的磁盘重新启动。(www.cgsecurity.org/wiki/TestDisk)</p>
+                                <p>2、Recuva, 一款轻松快速地文件恢复工具。不管是误删文件, 还是计算机崩溃文件丢失, 它都可以帮助你恢复文件！该工具支持恢复丢失的图片、音乐、文档、视频、电子邮件或任何其他文件类型。(www.ccleaner.com/zh-cn/recuva)</p>
+                                <p>3、CuteRecovery, 一个安全的数据恢复软件, 可轻松快速地恢复丢失的数据。具有高恢复率, 无风险等特点。支持在台式机和笔记本电脑、硬盘、存储卡、U盘、数码相机等设备中恢复数据。(www.eassos.com)</p>
+                                <p>4、Stellar Data Recovery, 支持在任何数据丢失情况下轻松恢复丢失或删除的Windows数据, 无论是无意还是故意删除。(www.stellarinfo.com)</p>
+                                <p>5、Windows File Recovery, 该程序是使用winfr命令运行的。它具有专为NTFS文件系统设计的模式, 该模式将尝试从损坏或已格式化的磁盘中恢复文件。另一种模式将尝试从FAT和exFAT(主要在外部设备上找到)和ReFS文件系统恢复特定文件类型。</p>
                                 <footer>
                                     <ul class="stats">
                                         <li><a href="../breach/index.html">突破信息</a></li>

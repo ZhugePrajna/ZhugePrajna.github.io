@@ -27,6 +27,19 @@
                         </nav>
                         <nav class="main">
                             <ul>
+                                <li class="search">
+                                    <a class="fa-search" href="#search">Search</a>
+                                    <form id="search" method="get" action="https://www.google.com/search">
+                                        <input type="text" name="query" value="" placeholder="Google" />
+                                        <input type="hidden" name="pws" value="0" />
+                                        <input type="hidden" name="ie" value="UTF-8" />
+                                        <input type="hidden" name="oe" value="en" />
+                                        <input type="hidden" name="num" value="10" />
+                                        <input type="hidden" name="hl" value="en" />
+                                        <input type="hidden" name="domains" value="zhugeprajna.github.io" />
+                                        <input type="hidden" name="sitesearch" value="zhugeprajna.github.io" />
+                                    </form>
+                                </li>
                                 <li class="menu">
                                     <a class="fa-bars" href="#menu">Menu</a>
                                 </li>
@@ -37,13 +50,60 @@
                 <!-- Menu -->
                     <section id="menu">
 
+                        <!-- Search -->
+                            <section>
+                                <form class="search" method="get" action="https://duckduckgo.com/">
+                                    <input type="text" name="q" value="" placeholder="DuckDuckGo" />
+                                    <input type="hidden" name="kp" value="1" />
+                                    <input type="hidden" name="k1" value="-1" />
+                                </form>
+                            </section>
+
                         <!-- Links -->
-                            <section><ul class="links"><li><a href="../dpon/index.html"><h3>深海记事</h3><p>Who Am I?</p><p>I Am You...</p></a></li></ul></section>
-                            <section><ul class="links"><li><a href="../block-story/index.html"><h3>昔来往事</h3><p>What was done to me created me.</p></a></li></ul></section>
-                            <section><ul class="links"><li><a href="../Uncategorized/index.html"><h3>未定义记事录</h3><p>It's a basic principle of the Universe that every action will create an</p><p>equal and opposing reaction.</p></a></li></ul></section>
-                            <section><ul class="links"><li><a href="../breach/index.html"><h3>突破信息</h3><p>I attribute my success to this: </p><p>I never gave or took any excuse.</p></a></li></ul></section>
-                            <section><ul class="links"><li><a href="../resource/index.html"><h3>Resource</h3><p>Read A Fucking Book.</p></a></li></ul></section>
-                            <section><ul class="links"><li><a href="../zhouenlai/index.html"><h3>周恩来</h3><p>为了忘却的纪念</p><p>为了和平而祈愿</p></a></li></ul></section>
+                            <section>
+                                <ul class="links">
+                                    <li>
+                                        <a href="../dpon/index.html">
+                                            <h3>深海记事</h3>
+                                            <p>Who Am I?</p>
+                                            <p>I Am You...</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../block-story/index.html">
+                                            <h3>昔来往事</h3>
+                                            <p>What was done to me created me.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../Uncategorized/index.html">
+                                            <h3>未定义记事录</h3>
+                                            <p>It's a basic principle of the Universe that every action will create an</p>
+                                            <p>equal and opposing reaction.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../breach/index.html">
+                                            <h3>突破信息</h3>
+                                            <p>I attribute my success to this: </p>
+                                            <p>I never gave or took any excuse.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../resource/index.html">
+                                            <h3>Resource</h3>
+                                            <p>Read A Fucking Book.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../zhouenlai/index.html">
+                                            <h3>周恩来</h3>
+                                            <p>为了忘却的纪念</p>
+                                            <p>为了和平而祈愿</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
 
                     </section>
 
@@ -63,12 +123,12 @@
                                     </div>
                                 </header>
                                 <span class="image featured"></span>
-                                <p>思来想去，还是写下了这篇文章。</p>
-                                <p>我一直在想如何唤醒“突破信息”，是写几篇技术性的文章，还是彻彻底底来几次“灌水”文...但我都选择了放弃，觉得还是不必唤醒“突破信息”为好。突破信息说白了，只是个人存放技术知识的地方，仅仅只是个“库”，没有什么特别之处。</p>
-                                <p>我不擅长去写一些有关我的技术的文章，因为我非常怕麻烦，非常的怕。我曾经写过几篇关于近源渗透的文章，后来也都删了，风险太大，而我只是个平平无奇的普通人而已。其实不擅长是原因之一，还有一点原因，便是我觉得不必去写过多的重复性的或者说是质量比其它文章低的文章。文章得精，而不是写了一大串之后，发现涉及技术部分的太少了，或者是质量太差。而做这一行的，最怕的便是这种。</p>
-                                <p>有很多人的文章都挺不错的，从实用性的文章到需要理解的文章，应有尽有。不像有些“利用Kali渗透WindowsXP”诸如此类的文章，没有什么特别技术含量，甚至可以说是自娱自乐的节目效果，连原理都不会告知。因为原理这个东西，没有庞大的知识储备以及知识的调用能力，一两句话实在说不清楚。</p>
-                                <p>有人若是想真心学技术，那不妨就去潜心学一门适合自己的计算机语言。互联网上的免费资源很多，学不学便是自己的事情了，这无关能力的大小。想起云舒先生的一句话：学习技术并不需要什么高端的设备，而是耐着性子的学。可能我记错了，但本质就是这样的吧...</p>
-                                <p>欢迎来到“突破信息”，但不过它又要沉睡了，让我们下一次再见吧:)</p>
+                                <p>思来想去, 还是写下了这篇文章。</p>
+                                <p>我一直在想如何唤醒"突破信息", 是写几篇技术性的文章, 还是彻彻底底来几次"灌水"文...但我都选择了放弃, 觉得还是不必唤醒"突破信息"为好。突破信息说白了, 只是个人存放技术知识的地方, 仅仅只是个"库", 没有什么特别之处。</p>
+                                <p>我不擅长去写一些有关我的技术的文章, 因为我非常怕麻烦, 非常的怕。我曾经写过几篇关于近源渗透的文章, 后来也都删了, 风险太大, 而我只是个平平无奇的普通人而已。其实不擅长是原因之一, 还有一点原因, 便是我觉得不必去写过多的重复性的或者说是质量比其它文章低的文章。文章得精, 而不是写了一大串之后, 发现涉及技术部分的太少了, 或者是质量太差。而做这一行的, 最怕的便是这种。</p>
+                                <p>有很多人的文章都挺不错的, 从实用性的文章到需要理解的文章, 应有尽有。不像有些"利用Kali渗透WindowsXP"诸如此类的文章, 没有什么特别技术含量, 甚至可以说是自娱自乐的节目效果, 连原理都不会告知。因为原理这个东西, 没有庞大的知识储备以及知识的调用能力, 一两句话实在说不清楚。</p>
+                                <p>有人若是想真心学技术, 那不妨就去潜心学一门适合自己的计算机语言。互联网上的免费资源很多, 学不学便是自己的事情了, 这无关能力的大小。想起云舒先生的一句话：学习技术并不需要什么高端的设备, 而是耐着性子的学。可能我记错了, 但本质就是这样的吧...</p>
+                                <p>欢迎来到"突破信息", 但不过它又要沉睡了, 让我们下一次再见吧:)</p>
                                 <footer>
                                     <ul class="stats">
                                         <li><a href="../breach/index.html">突破信息</a></li>

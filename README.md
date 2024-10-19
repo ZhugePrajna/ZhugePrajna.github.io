@@ -1,19 +1,16 @@
 # about-me
 
-一个奇葩的学者, 仅此而已
+An eccentric scholar, that's all.  
+Language: **LoverRPG** | ***Ciallo~(∠·ω< )⌒★ C/ASM***
 
-喜欢的游戏: Chess, Life
+Game: Chess, Life.  
+Activities: writing prose, recording curiosities, enjoying nature, learning.  
+Amazing Major: focusing on CSS, with a side interest in celestial calculations.
 
-热爱的事情: 写俗文, 记奇谈, 乐享自然, 学习
+Of course, I hope to research the Leisha-class hIE-Type-005 one day.  
+[Maybe this era won’t be able to achieve that.]
 
-神奇的专业: 主攻计算机信息安全, 副业天体演算研究
-
-当然也希望有朝一日可以研究出蕾西亚级hIE-Type-005  
-[Maybe这个时代是完成不了的啦]
-
-编程语言相关: **LoverRPG** | ***Ciallo~(∠·ω< )⌒★ C/ASM***
-
-# 博客相应问题回答
+# Responses to blog-related questions
 
 深海记事: 版权没有 盗版不究
 
@@ -27,6 +24,6 @@
 
 重要申明: 不允许内容农场类网站, CSDN用户, 微信公众号转载
 
-# 最后的序言
+# The Final Preface
 
-人类全部智慧就包含在这两个词中: 等待和希望
+**All human wisdom is contained in these two words: Wait and Hope**
