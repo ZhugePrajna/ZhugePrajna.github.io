@@ -22,6 +22,7 @@ HiBit Uninstaller: https://www.hibitsoft.ir/Uninstaller.html
 <$>Revo Uninstaller: https://www.revouninstaller.com/
 
 [Portable Tools]
+Git: https://git-scm.com/
 Rufus: https://rufus.ie/zh/
 7-zip: https://www.7-zip.org/
 ShareX: https://getsharex.com/
@@ -83,13 +84,15 @@ VLC: https://www.videolan.org/
 ImageGlass: https://imageglass.org/
 
 [Virtual Machine]
-VMware Workstation Pro: https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro
+VMware Workstation Pro: https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion
 <->VirtualBox: https://www.virtualbox.org/
 QEMU: https://www.qemu.org/
 UTM: https://mac.getutm.app/
 
 [Operating System]
 ITellYou: https://msdn.itellyou.cn/
+SJJZM: https://msdn.sjjzm.com/
+HelloWindows: https://www.hellowindows.cn/
 
 Ubuntu: https://ubuntu.com/
 Linux Mint: https://linuxmint.com/
@@ -167,16 +170,18 @@ Prism Launcher: https://prismlauncher.org/
 Fabric Loader: https://fabricmc.net/
 Modrinth: https://modrinth.com/
 MCA Selector: https://github.com/Querz/mcaselector
+VisualVM: https://github.com/oracle/visualvm
 
 [Uncategorized]
 Lenovo Legion Toolkit: https://github.com/BartoszCichecki/LenovoLegionToolkit
-Tor: https://www.torproject.org/
-I2P: https://geti2p.net/
 Hyprland: https://hyprland.org/
-VisualVM: https://github.com/oracle/visualvm
+Keybase: https://keybase.io/
 GitHub Desktop: https://github.com/apps/desktop
 Steam: https://store.steampowered.com/
 Epic: https://store.epicgames.com/en-US/
+
+Tor: https://www.torproject.org/
+I2P: https://geti2p.net/
 
 Microsoft Visual C++ Redistributable: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
 Visual Studio C++ Build tools: https://visualstudio.microsoft.com/visual-cpp-build-tools/

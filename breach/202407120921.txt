@@ -109,6 +109,9 @@ Thomas Laurenson's blog:
 0xdf's blog:
     https://0xdf.gitlab.io/
 
+Techyrick:
+    https://techyrick.com/
+
 ====================================
 [更多虚拟机推荐]
 NetSecFocus Trophy Room:
